@@ -472,69 +472,7 @@
       .components-grid { grid-template-columns: 1fr; }
       .comp-card { grid-column: span 1; }
     }
-  
-/* abc-critical-extracted */
-.shell{width:100%;max-width:var(--maxw);margin-inline:auto;padding-inline:var(--gutter)}
-.nav{background:rgba(255,255,255,.82);backdrop-filter:saturate(180%) blur(18px);-webkit-backdrop-filter:saturate(180%) blur(18px);border-bottom:1px solid var(--line-soft);transition:border-color .4s var(--ease),background .4s var(--ease),box-shadow .4s var(--ease)}
-.site-header.scrolled .nav{background:rgba(255,255,255,.92);border-bottom-color:var(--line);box-shadow:0 8px 24px -18px rgba(24,24,50,.18)}
-.nav__inner{display:flex;align-items:center;justify-content:space-between;height:74px;gap:22px}
-.brand{display:flex;align-items:center;gap:12px}
-.brand__logo{height:34px;width:auto;display:block}
-.brand small{display:none;font-family:Montserrat,sans-serif;font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-4);padding-left:13px;margin-left:1px;border-left:1px solid var(--line-strong);line-height:1.3}
-.brand small{display:block}
-.drawer__cta .btn{justify-content:center}
-.btn{display:inline-flex;align-items:center;gap:10px;padding:13px 22px;border-radius:999px;font-size:.92rem;font-weight:600;letter-spacing:-.01em;transition:transform .18s var(--ease),box-shadow .3s var(--ease),background .3s var(--ease),border-color .3s var(--ease),color .3s var(--ease);white-space:nowrap}
-.btn:active{transform:translateY(1px) scale(.985)}
-.btn--primary{background:linear-gradient(135deg,var(--brand-soft),var(--brand-deep));color:#fff;box-shadow:inset 0 1px 0 rgba(255,255,255,.28),0 14px 30px -14px var(--brand-glow)}
-.btn--primary:hover{box-shadow:inset 0 1px 0 rgba(255,255,255,.32),0 20px 40px -14px var(--brand-glow);transform:translateY(-1px)}
-.btn--wa{background:#1f9d52;color:#fff;box-shadow:0 14px 30px -14px rgba(31,157,82,.45)}
-.btn--wa:hover{background:#1c8e4a;transform:translateY(-1px)}
-.btn--ghost{border:1px solid var(--line-strong);color:var(--ink-2);background:#fff;box-shadow:var(--shadow-xs)}
-.btn--ghost:hover{border-color:var(--brand);color:var(--brand-ink);background:var(--brand-tint)}
-.btn--lg{padding:16px 28px;font-size:1rem}
-.btn svg{width:18px;height:18px}
-.hero__badges{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:26px}
-.chip{display:inline-flex;align-items:center;gap:8px;font-family:Montserrat,sans-serif;font-size:.7rem;letter-spacing:.06em;padding:7px 13px;border-radius:999px;border:1px solid var(--line-strong);color:var(--ink-3);background:#fff;box-shadow:var(--shadow-xs)}
-.chip b{color:var(--ink);font-weight:600}
-.chip--brand{border-color:rgba(62,56,242,.32);color:var(--brand-ink);background:var(--brand-tint)}
-.chip .dot{width:6px;height:6px;border-radius:50%;background:var(--ok-soft);box-shadow:0 0 0 3px rgba(26,168,107,.16)}
-.hero h1 .hl{color:var(--brand)}
-.footer__brand .brand__logo{height:36px}
-.footer__brand .fbadges .chip{font-size:.66rem;padding:6px 11px}
-.nav__cta .btn--ghost{display:none}
-.nav__inner{height:64px;gap:12px}
-.brand__logo{height:28px}
-.nav__cta .btn--primary{padding:11px 16px;font-size:.86rem}
-.rent-hero__panel .btn--light{background:#fff;color:var(--brand-deep);box-shadow:0 14px 30px -14px rgba(0,0,0,.3)}
-.rent-hero__panel .btn--light:hover{transform:translateY(-1px);box-shadow:0 20px 40px -14px rgba(0,0,0,.35)}
-.rent-page .hero h1 .hl{color:var(--brand)}
-.rent-stage{position:relative;padding:0;background:#0d1326;overflow:hidden}
-.rent-stage__photo{position:absolute;inset:0;z-index:0}
-.rent-stage__photo img{width:100%;height:100%;object-fit:cover;object-position:center}
-.rent-stage__scrim{position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(90deg,rgba(13,19,38,.94) 0,rgba(13,19,38,.82) 42%,rgba(13,19,38,.35) 100%),linear-gradient(0deg,rgba(13,19,38,.6) 0,transparent 45%)}
-.rent-stage__inner{position:relative;z-index:2;padding-block:clamp(70px,11vw,132px)}
-.rent-stage__copy{max-width:620px}
-.rent-stage .chip{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.22);color:rgba(255,255,255,.92)}
-.rent-stage .chip b{color:#fff}
-.rent-stage .chip--brand{background:rgba(62,56,242,.28);border-color:rgba(120,116,255,.5);color:#fff}
-.rent-stage__eyebrow{font-family:Montserrat,sans-serif;font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:#9fa6ff;display:inline-flex;align-items:center;gap:9px;margin-bottom:18px}
-.rent-stage__eyebrow::before{content:"";width:22px;height:2px;background:#6a64ff;border-radius:2px}
-.rent-stage h1{font-family:Montserrat;font-weight:800;letter-spacing:-.03em;line-height:1.03;color:#fff;font-size:clamp(2.1rem, 4.6vw, 3.4rem);margin-bottom:18px}
-.rent-stage h1 .hl{color:#aab0ff}
-.rent-stage__lead{color:rgba(255,255,255,.86);font-size:clamp(1rem, 1.5vw, 1.16rem);max-width:50ch;margin-bottom:30px;line-height:1.6}
-.rent-stage__lead strong{color:#fff}
-.rent-stage__actions{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:36px}
-.rent-stage .btn--light{background:#fff;color:var(--brand-deep)}
-.rent-stage .btn--light:hover{transform:translateY(-1px);box-shadow:0 20px 40px -16px rgba(0,0,0,.5)}
-.rent-stage__pills{display:flex;flex-wrap:wrap;gap:12px}
-.rent-stage__pill{display:flex;align-items:center;gap:10px;padding:11px 16px;border-radius:12px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(8px)}
-.rent-stage__pill svg{width:19px;height:19px;color:#aab0ff;flex-shrink:0}
-.rent-stage__pill b{display:block;color:#fff;font-size:.88rem;font-weight:600;line-height:1.15}
-.rent-stage__pill small{color:rgba(255,255,255,.6);font-size:.72rem}
-.rent-stage__caption{position:absolute;right:20px;bottom:18px;z-index:2;font-family:Montserrat,sans-serif;font-size:.64rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.55);background:rgba(13,19,38,.5);border:1px solid rgba(255,255,255,.14);padding:6px 11px;border-radius:8px;backdrop-filter:blur(6px)}
-.rent-stage__scrim{background:linear-gradient(0deg,rgba(13,19,38,.96) 0,rgba(13,19,38,.78) 55%,rgba(13,19,38,.6) 100%)}
-.rent-stage__caption{display:none}
-</style>
+  </style>
 </head>
 <body data-page="assistencia">
 
