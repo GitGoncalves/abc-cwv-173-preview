@@ -1,0 +1,1274 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#FFFFFF" />
+  <meta name="color-scheme" content="light" />
+
+  <!-- SEO: title <=60, description <=155, 1 H1 (no hero) -->
+  <title>Assistência Técnica Especializada | ABC Mais Telecom</title>
+  <meta name="description" content="Assistência especializada em rádios Motorola, Hytera e Intelbras: diagnóstico, orçamento, reparo, troca de antenas e botões. Garantia do fabricante." />
+  <link rel="canonical" href="https://abcmaistelecom.com.br/assistencia/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Assistência Técnica Especializada | ABC Mais Telecom" />
+  <meta property="og:description" content="Reparo especializado em Motorola, Hytera e Intelbras. Diagnóstico, orçamento, troca de componentes e garantia do fabricante." />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:url" content="https://abcmaistelecom.com.br/assistencia.html" />
+  <meta property="og:image" content="https://abcmaistelecom.com.br/shared/assets/brand/abcmais-brand.svg" />
+  <meta property="og:image:alt" content="ABC Mais Telecom: Assistência técnica especializada" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Assistência Técnica Especializada | ABC Mais Telecom" />
+  <meta name="twitter:description" content="Reparo especializado em Motorola, Hytera e Intelbras. Diagnóstico, orçamento, troca de componentes e garantia do fabricante." />
+  <meta name="twitter:image" content="https://abcmaistelecom.com.br/shared/assets/brand/abcmais-brand.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&display=optional" data-async-style />
+  <script src="shared/fonts.min.js" defer></script>
+  <script src="shared/lgpd-consent.min.js" defer></script>
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&display=optional" /></noscript>
+  <link rel="stylesheet" href="shared/style.min.css?v=20260618" />
+  <link rel="stylesheet" href="shared/img-standard.css?v=20260616" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%233E38F2'/%3E%3Cpath d='M8 22a14 14 0 0114-14' fill='none' stroke='white' stroke-width='2.4' stroke-linecap='round'/%3E%3Cpath d='M12 22a10 10 0 0110-10' fill='none' stroke='white' stroke-width='2.4' stroke-linecap='round'/%3E%3Cpath d='M16 22a6 6 0 016-6' fill='none' stroke='white' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E" />
+
+  <style>
+    /* =========================================================================
+       ASSISTÊNCIA - estilos específicos desta página (extensão do design system)
+       ========================================================================= */
+
+    /* ---- Hero da assistência ---- */
+    .assist-hero {
+      padding-top: clamp(40px, 7vw, 84px);
+      padding-bottom: clamp(56px, 8vw, 110px);
+      overflow: hidden;
+      background: linear-gradient(180deg, #FFFFFF 0%, var(--bg-1) 100%);
+    }
+    .assist-hero__bg {
+      position: absolute; inset: 0; z-index: 0; pointer-events: none;
+      background:
+        radial-gradient(58% 58% at 80% 14%, rgba(62,56,242,0.09), transparent 70%),
+        radial-gradient(42% 50% at 8% 92%, rgba(62,56,242,0.04), transparent 72%);
+    }
+    .assist-hero__grid-lines {
+      position: absolute; inset: 0; z-index: 0; pointer-events: none; opacity: 0.5;
+      background-image:
+        linear-gradient(var(--line-soft) 1px, transparent 1px),
+        linear-gradient(90deg, var(--line-soft) 1px, transparent 1px);
+      background-size: 64px 64px;
+      mask-image: radial-gradient(120% 80% at 50% 0%, #000 28%, transparent 72%);
+      -webkit-mask-image: radial-gradient(120% 80% at 50% 0%, #000 28%, transparent 72%);
+    }
+    .assist-hero__inner {
+      position: relative; z-index: 1;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: clamp(28px, 4vw, 60px);
+      align-items: center;
+    }
+    .assist-hero__copy { max-width: 600px; }
+    .assist-hero__copy h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      font-size: clamp(2.6rem, 6vw, 4.5rem);
+      line-height: 0.94;
+      letter-spacing: -0.045em;
+      margin-bottom: 22px;
+      color: var(--ink);
+    }
+    .assist-hero__copy h1 em {
+      font-style: normal; display: block; color: var(--ink-4);
+      font-weight: 500; font-size: 0.42em; letter-spacing: 0.02em; margin-bottom: 10px;
+    }
+    .assist-hero__copy h1 .hl { color: var(--brand); }
+    .assist-hero__lead {
+      font-size: clamp(1.02rem, 1.5vw, 1.16rem);
+      color: var(--ink-2); max-width: 50ch; margin-bottom: 16px;
+    }
+    .assist-hero__sub {
+      font-size: 0.96rem; color: var(--ink-3); max-width: 48ch; margin-bottom: 32px;
+    }
+    .assist-hero__actions { display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 34px; }
+    .assist-hero__trust {
+      display: flex; gap: 28px; flex-wrap: wrap;
+      padding-top: 26px; border-top: 1px solid var(--line);
+    }
+    .assist-hero__trust-item .n {
+      font-family: 'Montserrat'; font-weight: 700;
+      font-size: 1.6rem; letter-spacing: -0.02em; line-height: 1; color: var(--ink);
+    }
+    .assist-hero__trust-item .n span { color: var(--brand); }
+    .assist-hero__trust-item .l {
+      font-size: 0.72rem; color: var(--ink-4); margin-top: 6px;
+      font-family: 'Montserrat', sans-serif; letter-spacing: 0.04em;
+    }
+
+    /* ---- Visor da assistência (SVG técnico) ---- */
+    .assist-viewer {
+      position: relative; border-radius: var(--radius);
+      background:
+        radial-gradient(70% 80% at 50% 12%, rgba(62,56,242,0.08), transparent 70%),
+        linear-gradient(180deg, #FFFFFF, var(--bg-2));
+      border: 1px solid var(--line); box-shadow: var(--shadow-lg);
+      aspect-ratio: 4 / 4.3; overflow: hidden;
+      display: grid; place-items: center;
+    }
+    .assist-viewer::before {
+      content: ""; position: absolute; inset: 0;
+      background: radial-gradient(52% 36% at 50% 94%, rgba(24,24,50,0.06), transparent 72%);
+      pointer-events: none;
+    }
+    .assist-viewer__tag {
+      position: absolute; top: 16px; left: 16px; z-index: 3;
+      font-family: 'Montserrat', sans-serif; font-size: 0.66rem; letter-spacing: 0.12em;
+      padding: 6px 11px; border-radius: 8px;
+      background: rgba(255,255,255,0.82); border: 1px solid var(--line);
+      color: var(--ink-3); text-transform: uppercase;
+      backdrop-filter: blur(8px); box-shadow: var(--shadow-xs);
+    }
+    .assist-viewer__badge {
+      position: absolute; z-index: 4; background: rgba(255,255,255,0.92);
+      border: 1px solid var(--line); border-radius: 14px; padding: 11px 14px;
+      box-shadow: var(--shadow-md); backdrop-filter: blur(8px);
+      display: flex; align-items: center; gap: 10px;
+      animation: floaty 5s ease-in-out infinite;
+    }
+    .assist-viewer__badge .ic {
+      width: 32px; height: 32px; border-radius: 9px;
+      display: grid; place-items: center;
+      background: var(--brand-tint-2); color: var(--brand); flex-shrink: 0;
+    }
+    .assist-viewer__badge .ic svg { width: 16px; height: 16px; }
+    .assist-viewer__badge b { display: block; font-size: 0.8rem; color: var(--ink); font-weight: 600; }
+    .assist-viewer__badge small { font-size: 0.68rem; color: var(--ink-4); }
+    .assist-viewer__badge--1 { top: 18%; right: -8px; animation-delay: 0s; }
+    .assist-viewer__badge--2 { bottom: 20%; left: -10px; animation-delay: 1.6s; }
+
+    /* ---- Processo (timeline) ---- */
+    .process { background: var(--bg-1); border-block: 1px solid var(--line); }
+    .process__grid {
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      gap: 16px; margin-top: 52px;
+    }
+    .process-step {
+      position: relative;
+      border: 1px solid var(--line); border-radius: var(--radius);
+      padding: 28px 24px; background: #fff;
+      box-shadow: var(--shadow-sm);
+      transition: border-color 0.3s var(--ease), transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
+    }
+    .process-step:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border-color: var(--line-strong); }
+    /* conector entre passos */
+    .process-step:not(:last-child)::after {
+      content: "";
+      position: absolute; top: 38px; right: -9px;
+      width: 18px; height: 18px;
+      background: var(--bg-3);
+      border-radius: 50%;
+      border: 1px solid var(--line);
+      z-index: 2;
+      display: grid; place-items: center;
+    }
+    .process-step__num {
+      font-family: 'Montserrat', sans-serif; font-weight: 600;
+      font-size: 0.68rem; letter-spacing: 0.14em; color: var(--brand-ink);
+      text-transform: uppercase; margin-bottom: 18px;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .process-step__num::before {
+      content: attr(data-n);
+      width: 30px; height: 30px; border-radius: 50%;
+      background: var(--brand-tint-2); border: 1px solid rgba(62,56,242,0.22);
+      display: grid; place-items: center;
+      font-size: 0.78rem; color: var(--brand-ink); font-weight: 700;
+      flex-shrink: 0;
+    }
+    .process-step__ic {
+      width: 48px; height: 48px; border-radius: 14px;
+      display: grid; place-items: center;
+      background: var(--brand-tint-2); border: 1px solid rgba(62,56,242,0.16);
+      color: var(--brand); margin-bottom: 18px;
+    }
+    .process-step__ic svg { width: 24px; height: 24px; }
+    .process-step h3 {
+      font-family: 'Montserrat'; font-weight: 700;
+      font-size: 1.1rem; letter-spacing: -0.02em; color: var(--ink); margin-bottom: 9px;
+    }
+    .process-step p { font-size: 0.87rem; color: var(--ink-3); line-height: 1.55; }
+    .process-step__tag {
+      margin-top: 16px; display: inline-block;
+      font-family: 'Montserrat', sans-serif; font-size: 0.6rem; letter-spacing: 0.06em;
+      padding: 4px 10px; border-radius: 999px;
+      background: var(--bg-2); border: 1px solid var(--line); color: var(--ink-4);
+    }
+    .process-step--highlight {
+      background: linear-gradient(135deg, var(--brand-tint-2), var(--brand-tint) 60%, #fff);
+      border-color: rgba(62,56,242,0.26);
+    }
+    .process-step--highlight .process-step__num { color: var(--brand); }
+
+    /* ---- Marcas atendidas ---- */
+    .brands-section { background: var(--bg); }
+    .brands-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 16px; margin-top: 52px;
+    }
+    .brand-card {
+      border: 1px solid var(--line); border-radius: var(--radius);
+      padding: 34px 28px; background: #fff;
+      box-shadow: var(--shadow-sm); display: flex; flex-direction: column; gap: 16px;
+      transition: border-color 0.3s var(--ease), transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
+    }
+    .brand-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: rgba(62,56,242,0.30); }
+    .brand-card__logo {
+      display: inline-flex; align-items: center; gap: 10px;
+      font-family: 'Montserrat'; font-weight: 800;
+      font-size: 1.5rem; letter-spacing: -0.03em; color: var(--ink);
+    }
+    .brand-card__logo .dot {
+      width: 10px; height: 10px; border-radius: 50%; background: var(--brand);
+    }
+    .brand-card__badge {
+      display: inline-flex; align-items: center; gap: 7px;
+      font-family: 'Montserrat', sans-serif; font-size: 0.62rem; letter-spacing: 0.08em;
+      text-transform: uppercase; padding: 5px 11px; border-radius: 999px;
+      background: var(--brand-tint); border: 1px solid rgba(62,56,242,0.22); color: var(--brand-ink);
+    }
+    .brand-card h3 {
+      font-family: 'Montserrat'; font-weight: 700;
+      font-size: 1.3rem; letter-spacing: -0.02em; color: var(--ink);
+    }
+    .brand-card p { font-size: 0.9rem; color: var(--ink-3); line-height: 1.55; }
+    .brand-card__services { display: flex; flex-direction: column; gap: 10px; margin-top: 4px; }
+    .brand-card__service {
+      display: flex; align-items: center; gap: 10px;
+      font-size: 0.88rem; color: var(--ink-2);
+    }
+    .brand-card__service svg { width: 17px; height: 17px; color: var(--ok); flex-shrink: 0; }
+
+    /* ---- Venda consultiva + assistência ---- */
+    .sales-service { background: var(--bg); }
+    .sales-service__layout {
+      display: grid;
+      grid-template-columns: minmax(0, 0.86fr) minmax(0, 1.14fr);
+      gap: clamp(24px, 4vw, 52px);
+      align-items: start;
+      margin-top: 50px;
+    }
+    .sales-service__panel {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+      padding: clamp(24px, 3vw, 34px);
+      box-shadow: var(--shadow-sm);
+    }
+    .sales-service__panel h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.08;
+      font-size: clamp(1.5rem, 2.4vw, 2.05rem);
+      color: var(--ink);
+      margin-bottom: 14px;
+    }
+    .sales-service__panel p { color: var(--ink-2); font-size: 0.96rem; line-height: 1.62; }
+    .sales-service__note {
+      margin-top: 22px;
+      padding: 16px 18px;
+      border-radius: var(--radius-sm);
+      border: 1px solid rgba(62,56,242,0.18);
+      background: var(--brand-tint-2);
+      color: var(--brand-ink);
+      font-size: 0.88rem;
+      line-height: 1.5;
+    }
+    .sales-service__grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+    .sales-card {
+      border: 1px solid var(--line);
+      border-radius: var(--radius-sm);
+      background: #fff;
+      padding: 22px;
+      box-shadow: var(--shadow-xs);
+      min-height: 210px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .sales-card__ic {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      background: var(--brand-tint-2);
+      border: 1px solid rgba(62,56,242,0.14);
+      color: var(--brand);
+    }
+    .sales-card__ic svg { width: 21px; height: 21px; }
+    .sales-card h4 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      color: var(--ink);
+      font-size: 1rem;
+      letter-spacing: -0.01em;
+    }
+    .sales-card p { color: var(--ink-3); font-size: 0.85rem; line-height: 1.52; }
+    .sales-card__tag {
+      margin-top: auto;
+      width: fit-content;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.58rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 4px 9px;
+      border-radius: 999px;
+      background: var(--bg-2);
+      border: 1px solid var(--line);
+      color: var(--ink-4);
+    }
+
+    /* ---- Componentes substituíveis ---- */
+    .components-section { background: var(--bg-1); border-block: 1px solid var(--line); }
+    .components-grid {
+      display: grid; grid-template-columns: repeat(6, 1fr);
+      gap: 14px; margin-top: 50px;
+    }
+    .comp-card {
+      grid-column: span 2;
+      border: 1px solid var(--line); border-radius: var(--radius-sm);
+      padding: 22px; background: #fff;
+      box-shadow: var(--shadow-xs);
+      transition: border-color 0.3s var(--ease), transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
+    }
+    .comp-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-sm); border-color: var(--line-strong); }
+    .comp-card__ic {
+      width: 44px; height: 44px; border-radius: 12px;
+      display: grid; place-items: center;
+      background: var(--brand-tint-2); border: 1px solid rgba(62,56,242,0.14);
+      color: var(--brand); margin-bottom: 14px;
+    }
+    .comp-card__ic svg { width: 22px; height: 22px; }
+    .comp-card h4 { font-size: 1rem; font-weight: 600; color: var(--ink); margin-bottom: 5px; }
+    .comp-card p { font-size: 0.83rem; color: var(--ink-3); line-height: 1.5; }
+    .comp-card__tag {
+      margin-top: 12px; display: inline-block;
+      font-family: 'Montserrat', sans-serif; font-size: 0.58rem; letter-spacing: 0.06em;
+      padding: 3px 9px; border-radius: 999px;
+      background: var(--bg-2); border: 1px solid var(--line); color: var(--ink-4);
+    }
+
+    /* ---- Trust strip assistência ---- */
+    .assist-trust { border-block: 1px solid var(--line); background: #fff; }
+    .assist-trust__inner {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 1px; background: var(--line);
+    }
+    .assist-trust__cell {
+      background: #fff; padding: 26px 22px;
+      display: flex; gap: 14px; align-items: flex-start;
+      transition: background 0.25s var(--ease);
+    }
+    .assist-trust__cell:hover { background: var(--bg-1); }
+    .assist-trust__cell svg { width: 24px; height: 24px; color: var(--brand); flex-shrink: 0; margin-top: 2px; }
+    .assist-trust__cell h4 { font-size: 0.96rem; font-weight: 600; margin-bottom: 3px; color: var(--ink); }
+    .assist-trust__cell p { font-size: 0.82rem; color: var(--ink-3); line-height: 1.45; }
+
+    /* ---- Garantia ---- */
+    .warranty-section { background: var(--bg); }
+    .warranty-banner {
+      margin-top: 50px;
+      border: 1px solid rgba(62,56,242,0.22);
+      border-radius: var(--radius);
+      background: linear-gradient(135deg, var(--brand-tint-2), var(--brand-tint) 55%, #fff);
+      padding: clamp(28px, 4vw, 48px);
+      display: grid; grid-template-columns: 1fr 1fr; gap: clamp(28px, 4vw, 56px); align-items: center;
+      box-shadow: var(--shadow-md);
+    }
+    .warranty-banner h3 {
+      font-family: 'Montserrat'; font-weight: 800;
+      font-size: clamp(1.7rem, 3.5vw, 2.5rem); letter-spacing: -0.03em;
+      line-height: 1.04; color: var(--ink); margin-bottom: 14px;
+    }
+    .warranty-banner p { font-size: 0.98rem; color: var(--ink-2); max-width: 44ch; line-height: 1.6; }
+    .warranty-points { display: flex; flex-direction: column; gap: 14px; }
+    .warranty-point { display: flex; gap: 13px; align-items: flex-start; }
+    .warranty-point__ic {
+      width: 36px; height: 36px; border-radius: 10px; flex-shrink: 0;
+      display: grid; place-items: center;
+      background: var(--brand-tint-2); border: 1px solid rgba(62,56,242,0.18); color: var(--brand);
+    }
+    .warranty-point__ic svg { width: 18px; height: 18px; }
+    .warranty-point h4 { font-size: 0.98rem; font-weight: 600; color: var(--ink); margin-bottom: 3px; }
+    .warranty-point p { font-size: 0.86rem; color: var(--ink-3); line-height: 1.5; }
+
+    /* ---- Contato / CTA específico assistência ---- */
+    .assist-cta { overflow: hidden; background: linear-gradient(180deg, var(--bg-1) 0%, #fff 100%); }
+    .assist-cta__bg {
+      position: absolute; inset: 0; z-index: 0; pointer-events: none;
+      background:
+        radial-gradient(52% 66% at 82% 28%, rgba(62,56,242,0.10), transparent 70%),
+        radial-gradient(40% 50% at 8% 92%, rgba(62,56,242,0.05), transparent 72%);
+    }
+    .assist-cta__inner {
+      position: relative; z-index: 1;
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: clamp(30px, 5vw, 64px); align-items: center;
+    }
+    .assist-cta__copy { max-width: 500px; }
+    .assist-cta__copy h2 {
+      font-family: 'Montserrat'; font-weight: 800;
+      font-size: clamp(2rem, 4.2vw, 3.1rem); line-height: 1.02;
+      letter-spacing: -0.035em; color: var(--ink); margin-bottom: 16px;
+    }
+    .assist-cta__copy p { font-size: 1rem; color: var(--ink-2); max-width: 44ch; margin-bottom: 24px; }
+    .assist-cta__direct { display: flex; flex-direction: column; gap: 14px; margin-top: 24px; }
+    .assist-cta__direct a { display: flex; align-items: center; gap: 14px; font-size: 0.98rem; color: var(--ink-2); }
+    .assist-cta__direct a:hover { color: var(--ink); }
+    .assist-cta__direct .ic {
+      width: 42px; height: 42px; border-radius: 12px;
+      border: 1px solid var(--line-strong); display: grid; place-items: center;
+      color: var(--brand); background: #fff; box-shadow: var(--shadow-xs);
+      transition: border-color 0.25s, background 0.25s;
+    }
+    .assist-cta__direct a:hover .ic { border-color: var(--brand); background: var(--brand-tint); }
+    .assist-cta__direct .ic svg { width: 20px; height: 20px; }
+    .assist-cta__direct b { color: var(--ink); display: block; font-size: 1rem; }
+    .assist-cta__direct small { color: var(--ink-4); font-size: 0.78rem; }
+
+    .assist-float {
+      background: var(--brand);
+      box-shadow: 0 14px 30px -14px rgba(62,56,242,0.52);
+    }
+    .assist-float::after { border-color: rgba(62,56,242,0.55); }
+    .assist-float:hover { background: var(--brand-ink); }
+
+    /* --- Responsivo assistência --- */
+    @media (max-width: 1024px) {
+      .assist-hero__inner { grid-template-columns: 1fr; }
+      .assist-hero__copy { max-width: 640px; }
+      .assist-viewer { max-width: 500px; margin-inline: auto; width: 100%; }
+      .warranty-banner { grid-template-columns: 1fr; }
+      .assist-cta__inner { grid-template-columns: 1fr; }
+      .sales-service__layout { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 900px) {
+      .process__grid { grid-template-columns: 1fr 1fr; }
+      .process-step::after { display: none; }
+    }
+    @media (max-width: 760px) {
+      .brands-grid { grid-template-columns: 1fr; }
+      .components-grid { grid-template-columns: 1fr 1fr; }
+      .comp-card { grid-column: span 1; }
+      .assist-trust__inner { grid-template-columns: 1fr; }
+      .sales-service__grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 560px) {
+      .process__grid { grid-template-columns: 1fr; }
+      .components-grid { grid-template-columns: 1fr; }
+      .comp-card { grid-column: span 1; }
+    }
+  </style>
+</head>
+<body data-page="assistencia">
+
+  <!-- HEADER reaproveitável -->
+  <div id="site-header"></div>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="assist-hero">
+      <div class="assist-hero__bg"></div>
+      <div class="assist-hero__grid-lines"></div>
+      <div class="shell assist-hero__inner">
+
+        <div class="assist-hero__copy">
+          <div class="hero__badges" data-reveal>
+            <span class="chip chip--brand"><span class="dot"></span> Assistência <b>Especializada</b></span>
+            <span class="chip">Motorola · Hytera · <b>Intelbras</b></span>
+          </div>
+
+          <h1>
+            <em>ABC Mais Telecom: Radiocomunicação</em>
+            Reparo especializado<br>no rádio que <span class="hl">não pode parar.</span>
+          </h1>
+
+          <p class="assist-hero__lead" data-reveal>
+            Diagnóstico técnico, orçamento sem custo e reparo especializado em
+            rádios Motorola, Hytera e Intelbras. Troca de antena, botões, carcaça e
+            componentes internos, feito por quem conhece a plataforma.
+          </p>
+          <p class="assist-hero__sub" data-reveal>
+            Não é bancada genérica: é conhecimento real da linha de equipamentos.
+            Quando houver garantia aplicável do fabricante, a orientação é tratada com clareza antes do envio.
+          </p>
+
+          <div class="assist-hero__actions" data-reveal>
+            <a href="#cotacao" class="btn btn--primary btn--lg">
+              Solicitar orçamento
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a href="#cotacao" class="btn btn--ghost btn--lg">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a4 4 0 01-4 4H8l-5 3V7a4 4 0 014-4h10a4 4 0 014 4z"/><path d="M8 9h8M8 13h6"/></svg>
+              Descrever necessidade
+            </a>
+          </div>
+
+          <div class="assist-hero__trust" data-reveal>
+            <div class="assist-hero__trust-item">
+              <div class="n">3<span>marcas</span></div>
+              <div class="l">Motorola · Hytera · Intelbras</div>
+            </div>
+            <div class="assist-hero__trust-item">
+              <div class="n">Orçamento<span>.</span></div>
+              <div class="l">sem custo, sem compromisso</div>
+            </div>
+            <div class="assist-hero__trust-item">
+              <div class="n">Garantia<span>.</span></div>
+              <div class="l">orientação clara por modelo</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Visor técnico sem fotos de pessoas -->
+        <div class="assist-viewer" data-reveal aria-label="Ilustração de assistência técnica especializada em rádio">
+          <div class="assist-viewer__tag">Assistência técnica</div>
+
+          <!-- SVG técnico: representação de reparo de rádio -->
+          <svg viewBox="0 0 320 380" width="68%" height="68%" role="img" aria-label="Rádio HT em processo de diagnóstico técnico">
+            <!-- Rádio HT -->
+            <defs>
+              <linearGradient id="htGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#3E38F2" stop-opacity="0.92"/>
+                <stop offset="1" stop-color="#2A24C9" stop-opacity="0.95"/>
+              </linearGradient>
+              <linearGradient id="screenGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#EEF0F4"/>
+                <stop offset="1" stop-color="#E4E7EE"/>
+              </linearGradient>
+              <filter id="softShadow">
+                <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#18183a" flood-opacity="0.22"/>
+              </filter>
+            </defs>
+
+            <!-- Corpo do rádio -->
+            <rect x="102" y="44" width="116" height="280" rx="22" fill="url(#htGrad)" filter="url(#softShadow)"/>
+            <!-- Antena -->
+            <rect x="134" y="20" width="12" height="36" rx="6" fill="#2A24C9"/>
+            <rect x="130" y="52" width="20" height="8" rx="4" fill="#2A24C9"/>
+            <!-- Tela -->
+            <rect x="117" y="76" width="86" height="58" rx="9" fill="url(#screenGrad)"/>
+            <!-- Linhas de dados na tela -->
+            <rect x="127" y="88" width="46" height="5" rx="2.5" fill="#3E38F2" opacity="0.6"/>
+            <rect x="127" y="98" width="34" height="5" rx="2.5" fill="#3E38F2" opacity="0.35"/>
+            <rect x="127" y="108" width="52" height="5" rx="2.5" fill="#3E38F2" opacity="0.25"/>
+            <!-- PTT Button -->
+            <rect x="96" y="148" width="14" height="44" rx="7" fill="#2A24C9"/>
+            <!-- Botão principal circular -->
+            <circle cx="160" cy="184" r="22" fill="#1e1acc" opacity="0.85"/>
+            <circle cx="160" cy="184" r="14" fill="#FFFFFF" opacity="0.20"/>
+            <!-- Nav buttons -->
+            <rect x="126" y="218" width="20" height="16" rx="5" fill="#FFFFFF" opacity="0.22"/>
+            <rect x="154" y="218" width="20" height="16" rx="5" fill="#FFFFFF" opacity="0.22"/>
+            <rect x="174" y="218" width="20" height="16" rx="4" fill="#FFFFFF" opacity="0.22"/>
+            <!-- Alto-falante -->
+            <rect x="130" y="250" width="60" height="6" rx="3" fill="#FFFFFF" opacity="0.18"/>
+            <rect x="130" y="260" width="46" height="6" rx="3" fill="#FFFFFF" opacity="0.12"/>
+            <!-- Conector na base -->
+            <rect x="148" y="312" width="24" height="10" rx="4" fill="#1e1acc"/>
+
+            <!-- Indicadores de diagnóstico ao redor -->
+            <!-- Sinal OK antena -->
+            <circle cx="168" cy="30" r="5" fill="#15935E" opacity="0.9"/>
+            <path d="M156 24a18 18 0 0024 0" fill="none" stroke="#15935E" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+            <path d="M162 28a10 10 0 0012 0" fill="none" stroke="#15935E" stroke-width="2" stroke-linecap="round" opacity="0.55"/>
+
+            <!-- Chave de diagnóstico (ferramenta) -->
+            <g transform="translate(236, 140) rotate(-38)">
+              <rect x="-5" y="-34" width="10" height="56" rx="5" fill="#E4E7EE" stroke="#D6DAE3" stroke-width="1"/>
+              <rect x="-7" y="22" width="14" height="10" rx="4" fill="#3E38F2" opacity="0.7"/>
+              <circle cx="0" cy="-38" r="11" fill="none" stroke="#3E38F2" stroke-width="3" opacity="0.8"/>
+              <circle cx="0" cy="-38" r="5" fill="#3E38F2" opacity="0.6"/>
+            </g>
+
+            <!-- Marca de check (diagnóstico completo) -->
+            <circle cx="80" cy="240" r="18" fill="none" stroke="#15935E" stroke-width="2.5" opacity="0.7"/>
+            <path d="M73 240l5 6 11-10" fill="none" stroke="#15935E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+          </svg>
+
+          <div class="assist-viewer__badge assist-viewer__badge--1">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 7l-5 5 2 2 5-5"/><path d="M3 21l3-1 12-12-2-2L4 18l-1 3z"/></svg></div>
+            <span><b>Diagnóstico grátis</b><small>orçamento sem custo</small></span>
+          </div>
+          <div class="assist-viewer__badge assist-viewer__badge--2">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 12l2 2 4-4"/><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/></svg></div>
+            <span><b>Garantia aplicável</b><small>orientação por modelo</small></span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ TRUST STRIP ============ -->
+    <section class="assist-trust">
+      <div class="shell">
+        <div class="assist-trust__inner">
+          <div class="assist-trust__cell" data-reveal>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 12l2 2 4-4"/><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/></svg>
+            <div><h4>Especializado, não genérico</h4><p>Conhecimento específico em Motorola, Hytera e Intelbras: não é bancada de conserto geral.</p></div>
+          </div>
+          <div class="assist-trust__cell" data-reveal>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 7l-5 5 2 2 5-5"/><path d="M3 21l3-1 12-12-2-2L4 18l-1 3z"/></svg>
+            <div><h4>Diagnóstico e orçamento sem custo</h4><p>Você envia o rádio, a gente diagnostica e passa o orçamento. Só cobra se você aprovar o reparo.</p></div>
+          </div>
+          <div class="assist-trust__cell" data-reveal>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+            <div><h4>Garantia aplicável</h4><p>Quando houver cobertura do fabricante para o modelo e defeito, orientamos o caminho antes de qualquer reparo.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROCESSO ============ -->
+    <section class="process pad" id="processo">
+      <div class="shell">
+        <div class="section-head" data-reveal>
+          <span class="eyebrow">Como funciona</span>
+          <h2>Quatro passos do problema<br>ao rádio funcionando.</h2>
+          <p>Processo simples, sem burocracia e sem surpresa no final. Você sabe o custo antes de autorizar qualquer reparo.</p>
+        </div>
+
+        <div class="process__grid">
+
+          <article class="process-step" data-reveal>
+            <div class="process-step__num" data-n="1">Recebimento</div>
+            <div class="process-step__ic">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M21 10V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2h7"/><path d="M16 2v4M8 2v4M3 10h18"/><path d="M17 16l2 2 4-4"/></svg>
+            </div>
+            <h3>Envio ou entrega do rádio</h3>
+            <p>Você envia o equipamento ou combina entrega em São Paulo. Descrevemos juntos o defeito para agilizar o diagnóstico.</p>
+            <span class="process-step__tag">Entrada no sistema</span>
+          </article>
+
+          <article class="process-step process-step--highlight" data-reveal>
+            <div class="process-step__num" data-n="2">Diagnóstico</div>
+            <div class="process-step__ic">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M14 7l-5 5 2 2 5-5"/><path d="M3 21l3-1 12-12-2-2L4 18l-1 3z"/><circle cx="5" cy="20" r="1"/></svg>
+            </div>
+            <h3>Diagnóstico técnico</h3>
+            <p>Avaliação completa pelo técnico especializado: identificamos o defeito com precisão: elétrico, mecânico ou de firmware.</p>
+            <span class="process-step__tag">Sem custo</span>
+          </article>
+
+          <article class="process-step process-step--highlight" data-reveal>
+            <div class="process-step__num" data-n="3">Orçamento</div>
+            <div class="process-step__ic">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M9 14l6 0M9 10h6"/><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M14 2v5h5"/></svg>
+            </div>
+            <h3>Orçamento detalhado</h3>
+            <p>Orçamento claro com peças e mão de obra discriminadas. Você aprova ou recusa, sem pressão. Se recusar, devolvemos o equipamento.</p>
+            <span class="process-step__tag">Você decide</span>
+          </article>
+
+          <article class="process-step" data-reveal>
+            <div class="process-step__num" data-n="4">Reparo</div>
+            <div class="process-step__ic">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M9 12l2 2 4-4"/></svg>
+            </div>
+            <h3>Reparo e testes</h3>
+            <p>Execução do reparo com peça compatível ao modelo e aprovada no orçamento. Testes de funcionamento antes da devolução.</p>
+            <span class="process-step__tag">Com garantia</span>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ VENDA + ASSISTÊNCIA ============ -->
+    <section class="sales-service pad" id="venda-assistencia">
+      <div class="shell">
+        <div class="section-head" data-reveal>
+          <span class="eyebrow">Venda + assistência especializada</span>
+          <h2>Compra com orientação técnica,<br>não só entrega de caixa.</h2>
+          <p>Rádio é commodity. O que muda o resultado é atendimento, escolha correta e suporte depois da compra. A ABC vende equipamentos novos e acompanha a operação quando o rádio precisa de programação, ajuste ou reparo.</p>
+        </div>
+
+        <div class="sales-service__layout">
+          <div class="sales-service__panel" data-reveal>
+            <h3>O mesmo time que diagnostica também ajuda a comprar melhor.</h3>
+            <p>
+              A venda parte do cenário real: quantidade de equipes, ambiente de uso, necessidade de repetidora, acessórios e compatibilidade com a frota atual. Não colocamos preço ou especificação genérica na página porque a recomendação depende do uso.
+            </p>
+            <div class="sales-service__note">
+              Para eventos, obras, segurança, indústria e condomínios, a locação continua sendo o caminho principal quando o objetivo é pacote completo, implantação rápida e ROI imediato.
+            </div>
+          </div>
+
+          <div class="sales-service__grid">
+            <article class="sales-card" data-reveal>
+              <div class="sales-card__ic">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 6h2M9 10h6M10 16h4"/></svg>
+              </div>
+              <h4>Venda de rádios profissionais</h4>
+              <p>Motorola, Hytera e Intelbras indicados por operação, não por catálogo solto. A cotação confirma disponibilidade, modelo e acessórios necessários.</p>
+              <span class="sales-card__tag">Sem preço inventado</span>
+            </article>
+
+            <article class="sales-card" data-reveal>
+              <div class="sales-card__ic">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3v18"/><path d="M5 8a9 9 0 0114 0"/><path d="M8 11a5 5 0 018 0"/><circle cx="12" cy="14" r="1.5"/></svg>
+              </div>
+              <h4>Programação e compatibilidade</h4>
+              <p>Ajuste de canais, grupos e acessórios conforme a frota. Quando há rádio antigo, avaliamos compatibilidade antes de sugerir compra.</p>
+              <span class="sales-card__tag">Projeto por operação</span>
+            </article>
+
+            <article class="sales-card" data-reveal>
+              <div class="sales-card__ic">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M14 7l-5 5 2 2 5-5"/><path d="M3 21l3-1 12-12-2-2L4 18l-1 3z"/></svg>
+              </div>
+              <h4>Assistência após a venda</h4>
+              <p>Troca de componentes, diagnóstico elétrico, carcaça, antena, PTT, conector, display, alto-falante e microfone interno.</p>
+              <span class="sales-card__tag">Especializada</span>
+            </article>
+
+            <article class="sales-card" data-reveal>
+              <div class="sales-card__ic">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M20 7l-8-4-8 4 8 4 8-4z"/><path d="M4 12l8 4 8-4"/><path d="M4 17l8 4 8-4"/></svg>
+              </div>
+              <h4>Locação quando faz mais sentido</h4>
+              <p>Se a demanda é temporária ou precisa de implantação completa, recomendamos locação com equipamentos, acessórios e suporte no pacote.</p>
+              <span class="sales-card__tag">Carro-chefe ABC</span>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MARCAS ATENDIDAS ============ -->
+    <section class="brands-section pad" id="marcas">
+      <div class="shell">
+        <div class="section-head" data-reveal>
+          <span class="eyebrow">Marcas atendidas</span>
+          <h2>Especialistas em três<br>das principais marcas do mercado.</h2>
+          <p>Trabalhamos exclusivamente com Motorola, Hytera e Intelbras: as marcas que estão nas operações profissionais no Brasil. Nada fora dessas linhas.</p>
+        </div>
+
+        <div class="brands-grid">
+
+          <!-- Motorola -->
+          <article class="brand-card" data-reveal>
+            <div class="brand-card__logo">
+              Motorola<div class="dot"></div>
+            </div>
+            <div class="brand-card__badge">
+              <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/></svg>
+              Atendida pela ABC
+            </div>
+            <h3>MOTOTRBO™: rádio digital profissional (DMR)</h3>
+            <p>Linha R2, R7, DEP, DTR. Reparo em rádios bidirecional digital DMR: a linha profissional da Motorola Solutions para uso em operações críticas.</p>
+            <div class="brand-card__services">
+              <div class="brand-card__service">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12l4 4L19 6"/></svg>
+                Diagnóstico de falha elétrica e de firmware
+              </div>
+              <div class="brand-card__service">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12l4 4L19 6"/></svg>
+                Troca de antena, botão PTT e carcaça
+              </div>
+              <div class="brand-card__service">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12l4 4L19 6"/></svg>
+                Reparo de conector e microfone
+              </div>
+              <div class="brand-card__service">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12l4 4L19 6"/></svg>
+                Programação após reparo
+              </div>
+            </div>
+          </article>
+
+          <!-- Hytera -->
+          <article class="brand-card" data-reveal>
+            <div class="brand-card__logo">
+              Hytera<div class="dot"></div>
+            </div>
+            <div class="brand-card__badge">
+              <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/></svg>
+              Atendida pela ABC
+            </div>
+            <h3>Rádio bidirecional digital profissional</h3>
+            <p>Linha HP e BD. Rádio digital profissional da Hytera para equipes que precisam de comunicação clara, confiável e robusta no dia a dia.</p>
+            <div class="brand-card__services">
+              <div class="brand-card__service">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12l4 4L19 6"/></svg>
+                Avaliação e diagnóstico técnico
+              </div>
+              <div class="brand-card__service">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12l4 4L19 6"/></svg>
+                Troca de componentes e peças
+              </div>
+              <div class="brand-card__service">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12l4 4L19 6"/></svg>
+                Reparo de display e teclado
+              </div>
+              <div class="brand-card__service">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12l4 4L19 6"/></svg>
+                Reparo de alto-falante e receptor
+              </div>
+            </div>
+          </article>
+
+          <!-- Intelbras -->
+          <article class="brand-card" data-reveal>
+            <div class="brand-card__logo">
+              Intelbras<div class="dot"></div>
+            </div>
+            <div class="brand-card__badge">
+              <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/></svg>
+              Atendida pela ABC
+            </div>
+            <h3>Rádio comunicador Intelbras</h3>
+            <p>Linha de rádios profissionais Intelbras para comunicação segura e eficiente. Assistência especializada para as linhas de rádio profissional da marca.</p>
+            <div class="brand-card__services">
+              <div class="brand-card__service">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12l4 4L19 6"/></svg>
+                Diagnóstico de hardware
+              </div>
+              <div class="brand-card__service">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12l4 4L19 6"/></svg>
+                Troca de antena e acessórios
+              </div>
+              <div class="brand-card__service">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12l4 4L19 6"/></svg>
+                Reparo de bateria e carregador
+              </div>
+              <div class="brand-card__service">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12l4 4L19 6"/></svg>
+                Reparo de carcaça e vedação
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ COMPONENTES SUBSTITUÍVEIS ============ -->
+    <section class="components-section pad" id="componentes">
+      <div class="shell">
+        <div class="section-head" data-reveal>
+          <span class="eyebrow">O que trocamos</span>
+          <h2>Troca de componentes,<br>peça por peça, com critério.</h2>
+          <p>Não forçamos troca desnecessária. Diagnosticamos o que está com defeito e trocamos só o que precisa. A peça aplicada é confirmada no orçamento antes do reparo.</p>
+        </div>
+
+        <div class="components-grid">
+
+          <div class="comp-card" data-reveal>
+            <div class="comp-card__ic">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3v18M8 7l4-4 4 4"/><path d="M5 16a5 5 0 0114 0"/></svg>
+            </div>
+            <h4>Antena</h4>
+            <p>Troca de antena compatível com Motorola, Hytera e Intelbras, respeitando encaixe e faixa indicada para o modelo.</p>
+            <span class="comp-card__tag">Compatível ao modelo</span>
+          </div>
+
+          <div class="comp-card" data-reveal>
+            <div class="comp-card__ic">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="6" y="2" width="12" height="20" rx="4"/><rect x="9" y="6" width="6" height="4" rx="1"/><circle cx="12" cy="15" r="2"/></svg>
+            </div>
+            <h4>Botão PTT e teclado</h4>
+            <p>Botão push-to-talk desgastado ou travado, teclas do teclado sem resposta: troca com peça equivalente ao modelo.</p>
+            <span class="comp-card__tag">Motorola · Hytera</span>
+          </div>
+
+          <div class="comp-card" data-reveal>
+            <div class="comp-card__ic">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="7" width="18" height="12" rx="2"/><path d="M8 7V5a2 2 0 014 0v2"/><path d="M16 7V5a2 2 0 00-4 0"/></svg>
+            </div>
+            <h4>Carcaça e vedação</h4>
+            <p>Carcaça trincada ou com vedação comprometida pode afetar a resistência do equipamento. Avaliamos a peça correta para o modelo.</p>
+            <span class="comp-card__tag">Proteção do rádio</span>
+          </div>
+
+          <div class="comp-card" data-reveal>
+            <div class="comp-card__ic">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="6" y="8" width="12" height="8" rx="2"/><path d="M2 12h4M18 12h4"/></svg>
+            </div>
+            <h4>Conector de fone e mic externo</h4>
+            <p>Conector de acessório solto, dobrado ou oxidado. A troca pode resolver falhas em fone de ouvido e microfone externo.</p>
+            <span class="comp-card__tag">Conector compatível</span>
+          </div>
+
+          <div class="comp-card" data-reveal>
+            <div class="comp-card__ic">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/><circle cx="12" cy="12" r="4"/></svg>
+            </div>
+            <h4>Display (tela)</h4>
+            <p>Display quebrado, manchado ou sem retroiluminação. A tela é componente crítico para operação e programação do rádio.</p>
+            <span class="comp-card__tag">Peça sob orçamento</span>
+          </div>
+
+          <div class="comp-card" data-reveal>
+            <div class="comp-card__ic">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 18v-6a9 9 0 0118 0v6"/><path d="M21 19a2 2 0 01-2 2h-1a2 2 0 01-2-2v-3a2 2 0 012-2h3v5zM3 19a2 2 0 002 2h1a2 2 0 002-2v-3a2 2 0 00-2-2H3v5z"/></svg>
+            </div>
+            <h4>Alto-falante e microfone interno</h4>
+            <p>Áudio distorcido, fraco ou sem som. Troca de alto-falante e microfone interno restaura a qualidade de áudio do equipamento.</p>
+            <span class="comp-card__tag">Qualidade de áudio</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GARANTIA ============ -->
+    <section class="warranty-section pad" id="garantia">
+      <div class="shell">
+        <div class="section-head" data-reveal>
+          <span class="eyebrow">Garantia</span>
+          <h2>O que o fabricante cobre,<br>você recebe.</h2>
+        </div>
+
+        <div class="warranty-banner" data-reveal>
+          <div>
+            <h3>Garantia do fabricante: orientação clara antes do reparo.</h3>
+            <p>
+              A garantia é do fabricante (Motorola, Hytera ou Intelbras) e varia de acordo com o modelo
+              e o tipo de defeito. A ABC faz a triagem técnica e informa o caminho adequado antes de
+              qualquer cobrança ou substituição de componente.
+            </p>
+            <p style="margin-top:14px">
+              Em caso de dúvida sobre o que o seu modelo cobre, é só perguntar antes de enviar.
+              Respondemos com clareza sobre o que entra e o que não entra na garantia do fabricante.
+            </p>
+          </div>
+          <div class="warranty-points">
+            <div class="warranty-point">
+              <div class="warranty-point__ic">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 12l2 2 4-4"/><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/></svg>
+              </div>
+              <div>
+                <h4>Garantia avaliada por modelo</h4>
+                <p>Motorola, Hytera e Intelbras: análise conforme modelo, condição do equipamento e tipo de defeito.</p>
+              </div>
+            </div>
+            <div class="warranty-point">
+              <div class="warranty-point__ic">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 7l-5 5 2 2 5-5"/><path d="M3 21l3-1 12-12-2-2L4 18l-1 3z"/></svg>
+              </div>
+              <div>
+                <h4>Orçamento antes de qualquer cobrança</h4>
+                <p>Nada é feito sem sua aprovação. Diagnóstico e orçamento: sem custo. Reparo: só se você aprovar.</p>
+              </div>
+            </div>
+            <div class="warranty-point">
+              <div class="warranty-point__ic">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+              </div>
+              <div>
+                <h4>Sem surpresa no valor final</h4>
+                <p>O valor aprovado no orçamento é o valor cobrado. Sem adicionais surpresa na entrega.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="pad" id="faq" style="background:var(--bg-1); border-top:1px solid var(--line)">
+      <div class="shell">
+        <div class="faq__layout">
+          <div class="faq__intro" data-reveal>
+            <span class="eyebrow">FAQ</span>
+            <h2 class="section-head" style="margin-top:0">As 5 dúvidas<br>que mais chegam.</h2>
+            <p>Respondemos com clareza, sem forçar venda e sem esconder o que não funciona para o seu caso.</p>
+            <div class="faq__intro help" style="margin-top:26px; padding:20px; border:1px solid var(--line); border-radius:var(--radius-sm); background:var(--bg)">
+              <h4>Não encontrou a resposta?</h4>
+              <p style="font-size:.86rem; color:var(--ink-3); margin-top:4px">
+                Fale direto com a gente pelo
+                formulário desta página.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-list">
+
+            <div class="faq-item" data-reveal>
+              <button class="faq-q" aria-expanded="false">
+                <span class="ix">01</span>
+                <span class="faq-q__txt">Vocês atendem qualquer marca de rádio?</span>
+                <span class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span>
+              </button>
+              <div class="faq-a">
+                <div class="faq-a__inner">
+                  Não. A ABC atende exclusivamente <strong>Motorola, Hytera e Intelbras</strong>.
+                  Trabalhamos com essas marcas porque conhecemos a plataforma a fundo. É o que garante
+                  um diagnóstico correto e um reparo que dura. Para outras marcas, não temos as peças
+                  certas nem o conhecimento específico necessário.
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item" data-reveal>
+              <button class="faq-q" aria-expanded="false">
+                <span class="ix">02</span>
+                <span class="faq-q__txt">O diagnóstico tem custo mesmo que eu não aprove o orçamento?</span>
+                <span class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span>
+              </button>
+              <div class="faq-a">
+                <div class="faq-a__inner">
+                  <strong>Não.</strong> O diagnóstico é gratuito. Identificamos o defeito, calculamos o orçamento
+                  e apresentamos para você. Se você não aprovar, devolvemos o equipamento.
+                  Só cobramos quando o reparo é realizado, e apenas o valor do orçamento aprovado.
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item" data-reveal>
+              <button class="faq-q" aria-expanded="false">
+                <span class="ix">03</span>
+                <span class="faq-q__txt">O alcance do rádio era de X km no datasheet, por que ficou menor?</span>
+                <span class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span>
+              </button>
+              <div class="faq-a">
+                <div class="faq-a__inner">
+                  A especificação de alcance do fabricante é medida em <strong>área aberta, sem barreiras</strong>
+                  (campo, rural, sem prédios). Dentro de uma cidade, com edifícios, paredes e interferência,
+                  o alcance real é menor. Isso é normal e esperado, não é defeito do equipamento.
+                  Se o rádio perdeu alcance de forma abrupta, pode ser antena ou amplificador: nesses casos,
+                  vale passar pelo diagnóstico.
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item" data-reveal>
+              <button class="faq-q" aria-expanded="false">
+                <span class="ix">04</span>
+                <span class="faq-q__txt">Fone genérico (bateria genérica) funciona no rádio?</span>
+                <span class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span>
+              </button>
+              <div class="faq-a">
+                <div class="faq-a__inner">
+                  Sim, as próprias fabricantes têm uma <strong>segunda linha</strong> de acessórios compatíveis
+                  (mais em conta que o original top de linha, mas produzida pela própria marca).
+                  Fones e baterias genéricas de terceiros podem funcionar, mas sem garantia de qualidade de áudio
+                  e durabilidade. Nossa recomendação é validar a peça adequada para o modelo antes da compra ou reparo.
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item" data-reveal>
+              <button class="faq-q" aria-expanded="false">
+                <span class="ix">05</span>
+                <span class="faq-q__txt">Vocês consertam rádio Baofeng?</span>
+                <span class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span>
+              </button>
+              <div class="faq-a">
+                <div class="faq-a__inner">
+                  Não. O Baofeng é um produto que conhecemos bem, mas é essencialmente descartável e não tem cadeia de peças de reposição confiável no Brasil.
+                  Não temos estrutura de peças para essa linha nem recomendamos seu uso em operações profissionais.
+                  Se você usa Baofeng, o caminho é avaliar a migração para um equipamento com assistência técnica real.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA / COTAÇÃO ============ -->
+    <section class="assist-cta pad" id="cotacao">
+      <div class="assist-cta__bg"></div>
+      <div class="shell assist-cta__inner">
+        <div class="assist-cta__copy" data-reveal>
+          <span class="eyebrow">Solicitar venda ou assistência</span>
+          <h2>Comprar, reparar ou locar?<br>A gente orienta.</h2>
+          <p>
+            Descreva o defeito, a necessidade de compra ou o cenário de locação.
+            A gente responde com orientação técnica e próximos passos em ambiente local de validação.
+          </p>
+
+          <div class="assist-cta__direct">
+            <a href="#cotacao">
+              <span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm5.52 14.04c-.2.58-1.19 1.11-1.67 1.18-.43.06-.97.09-1.56-.1-.36-.11-.82-.26-1.41-.52-2.48-1.07-4.11-3.57-4.23-3.74-.12-.16-1.01-1.34-1.01-2.56s.63-1.82.86-2.07c.23-.25.49-.31.66-.31s.34 0 .48.01c.15.01.36-.05.56.43.2.5.7 1.72.76 1.84.06.12.1.26.02.43-.08.16-.12.26-.25.41-.12.14-.26.32-.37.43-.12.13-.25.26-.11.51.15.25.64 1.06 1.38 1.72.94.84 1.74 1.11 1.99 1.23.25.13.4.11.54-.06.15-.16.63-.72.79-.97.17-.25.33-.21.56-.13.22.09 1.44.69 1.69.81.25.12.41.18.47.28.07.11.07.6-.14 1.18z"/></svg></span>
+              <span><b>Formulário local</b><small>sem disparo real no sandbox</small></span>
+            </a>
+            <a href="contato.html#cotacao">
+              <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>
+              <span><b>Contato comercial</b><small>fluxo interno de cotação</small></span>
+            </a>
+          </div>
+        </div>
+
+        <!-- FORM de solicitação de assistência -->
+        <div class="quote-form" data-reveal>
+          <form id="quoteForm" data-ctx="pela página de Venda e Assistência Especializada" novalidate>
+            <h3>Solicitar orientação</h3>
+            <p>Diagnóstico e cotação sem custo. Descrevemos o orçamento antes de qualquer reparo ou venda.</p>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="nome">Nome <span class="req">*</span></label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+                <span class="err">Informe seu nome.</span>
+              </div>
+              <div class="field">
+                <label for="empresa">Empresa</label>
+                <input type="text" id="empresa" name="empresa" placeholder="Nome da empresa" />
+              </div>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="telefone">Telefone <span class="req">*</span></label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(11) 90000-0000" required />
+                <span class="err">Informe um telefone de contato.</span>
+              </div>
+              <div class="field">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="voce@empresa.com.br" />
+                <span class="err">E-mail inválido.</span>
+              </div>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="modalidade">Serviço <span class="req">*</span></label>
+                <select id="modalidade" name="modalidade" required>
+                  <option value="">Selecione…</option>
+                  <option value="venda">Compra de rádios</option>
+                  <option value="assistencia">Diagnóstico e reparo</option>
+                  <option value="garantia">Reparo em garantia</option>
+                  <option value="componente">Troca de componente</option>
+                  <option value="programacao">Programação do rádio</option>
+                  <option value="locacao">Locação com pacote completo</option>
+                </select>
+                <span class="err">Selecione uma opção.</span>
+              </div>
+              <div class="field">
+                <label for="marca">Marca do rádio</label>
+                <select id="marca" name="marca">
+                  <option value="">Selecione a marca…</option>
+                  <option value="motorola">Motorola</option>
+                  <option value="hytera">Hytera</option>
+                  <option value="intelbras">Intelbras</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="msg">Descreva a necessidade</label>
+              <textarea id="msg" name="msg" placeholder="Modelo do rádio, defeito observado, necessidade de compra, locação ou programação, quantidade de unidades e segmento da operação."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--lg">
+              Enviar solicitação
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </button>
+            <p class="form-disclaimer">No sandbox, o envio não aciona WhatsApp nem e-mail real. O fluxo segue apenas para a página local de confirmação.</p>
+          </form>
+
+          <div class="form-success" id="formSuccess">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l4 4L19 6"/></svg></div>
+            <h3>Solicitação registrada no fluxo local.</h3>
+            <p>No sandbox, nenhum canal externo é acionado. Em produção, a equipe comercial assume a orientação de envio, compra ou locação.</p>
+            <button class="btn btn--ghost" id="resetForm">Nova solicitação</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER reaproveitável -->
+  <div id="site-footer"></div>
+
+  <!-- CTA flutuante local -->
+  <a href="#cotacao" class="wa-float assist-float" aria-label="Abrir formulário de venda e assistência especializada">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a4 4 0 01-4 4H8l-5 3V7a4 4 0 014-4h10a4 4 0 014 4z"/><path d="M8 9h8M8 13h6"/></svg>
+  </a>
+
+  <!-- ============ SCHEMA.ORG ============ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://abcmaistelecom.com.br/#business",
+        "name": "ABC Mais Telecom",
+        "url": "https://abcmaistelecom.com.br/",
+        "description": "Radiocomunicação B2B: venda, locação e assistência técnica especializada de rádios profissionais Motorola, Hytera e Intelbras.",
+        "areaServed": "BR"
+      },
+      {
+        "@type": "Service",
+        "@id": "https://abcmaistelecom.com.br/assistencia.html#service",
+        "name": "Assistência Técnica Especializada em Rádios",
+        "description": "Diagnóstico, orçamento sem custo, venda consultiva e reparo especializado em rádios Motorola, Hytera e Intelbras. Troca de antena, botões, carcaça e componentes sob orçamento.",
+        "provider": {
+          "@id": "https://abcmaistelecom.com.br/#business"
+        },
+        "serviceType": "Assistência técnica em equipamentos de radiocomunicação",
+        "areaServed": "BR",
+        "url": "https://abcmaistelecom.com.br/assistencia.html",
+        "offers": {
+          "@type": "Offer",
+          "description": "Diagnóstico gratuito + orçamento sem custo. Reparo cobrado apenas após aprovação do orçamento.",
+          "availability": "https://schema.org/InStock"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Vocês atendem qualquer marca de rádio?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Não. A ABC atende exclusivamente Motorola, Hytera e Intelbras. Trabalhamos com essas marcas porque conhecemos a plataforma a fundo. É o que garante um diagnóstico correto e um reparo que dura."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "O diagnóstico tem custo mesmo que eu não aprove o orçamento?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Não. O diagnóstico é gratuito. Identificamos o defeito, calculamos o orçamento e apresentamos para você. Se você não aprovar, devolvemos o equipamento. Só cobramos quando o reparo é realizado."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Fone genérico (bateria genérica) funciona no rádio?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Acessórios compatíveis podem funcionar, mas precisam ser validados por modelo. Nossa recomendação é confirmar a peça adequada antes da compra ou reparo."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Vocês consertam rádio Baofeng?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Não. O Baofeng é essencialmente descartável e não tem cadeia de peças de reposição confiável no Brasil. Se você usa Baofeng, o caminho é avaliar a migração para um equipamento com assistência técnica real."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <script src="shared/app.min.js?v=20260618"></script>
+
+  <script src="shared/pages/assistencia.b1.js"></script>
+</body>
+</html>

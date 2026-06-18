@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#FFFFFF" />
+  <meta name="color-scheme" content="light" />
+
+  <!-- SEO: title ≤60, description ≤155, 1 H1 -->
+  <title>Venda e Assistência Especializada | ABC Mais Telecom</title>
+  <meta name="description" content="Venda B2B e assistência especializada em rádios Motorola, Hytera e Intelbras: diagnóstico, reparo e programação no ABC Paulista. Solicite cotação." />
+  <link rel="canonical" href="https://abcmaistelecom.com.br/venda-assistencia/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Venda e Assistência Especializada | ABC Mais Telecom" />
+  <meta property="og:description" content="Venda B2B e assistência técnica especializada em rádios profissionais Motorola, Hytera e Intelbras. Do rádio certo ao suporte que mantém a frota no ar." />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:url" content="https://abcmaistelecom.com.br/venda-assistencia.html" />
+  <meta property="og:image" content="https://abcmaistelecom.com.br/shared/assets/brand/abcmais-brand.svg" />
+  <meta property="og:image:alt" content="ABC Mais Telecom: Venda e Assistência Especializada" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Venda e Assistência Especializada | ABC Mais Telecom" />
+  <meta name="twitter:description" content="Venda B2B e assistência técnica especializada em rádios profissionais Motorola, Hytera e Intelbras." />
+  <meta name="twitter:image" content="https://abcmaistelecom.com.br/shared/assets/brand/abcmais-brand.svg" />
+
+  <!-- Schema: Service -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Venda e Assistência Especializada em Radiocomunicação",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "ABC Mais Telecom",
+      "telephone": "+55-11-3996-1976",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Dr. Rudge Ramos, 320 — Sala 508",
+        "addressLocality": "São Bernardo do Campo",
+        "addressRegion": "SP",
+        "postalCode": "09636-000",
+        "addressCountry": "BR"
+      }
+    },
+    "description": "Venda B2B e assistência técnica especializada em rádios Motorola, Hytera e Intelbras: diagnóstico, reparo, troca de componentes, programação e manutenção preventiva.",
+    "areaServed": [
+      { "@type": "State", "name": "São Paulo" },
+      { "@type": "AdministrativeArea", "name": "Grande ABC" }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&display=optional" data-async-style />
+  <script src="shared/fonts.min.js" defer></script>
+  <script src="shared/lgpd-consent.min.js" defer></script>
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&display=optional" /></noscript>
+  <link rel="stylesheet" href="shared/style.min.css?v=20260618" />
+
+  <!-- Estilos específicos: venda-assistencia.html -->
+  <style>
+    /* LCP: hero acima da dobra não deve iniciar oculto */
+    .va-hero [data-reveal] { opacity: 1; transform: none; }
+
+    /* ==========================================================================
+       HERO — página combinada venda + assistência especializada
+       ========================================================================== */
+    .va-hero {
+      padding-top: clamp(40px, 7vw, 84px);
+      padding-bottom: clamp(52px, 8vw, 100px);
+      overflow: hidden;
+      background: linear-gradient(180deg, #FFFFFF 0%, var(--bg-1) 100%);
+    }
+    .va-hero__bg {
+      position: absolute; inset: 0; z-index: 0; pointer-events: none;
+      background:
+        radial-gradient(55% 55% at 78% 16%, rgba(62,56,242,0.09), transparent 68%),
+        radial-gradient(38% 46% at 6% 90%, rgba(62,56,242,0.04), transparent 70%);
+    }
+    .va-hero__inner {
+      position: relative; z-index: 1;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: clamp(28px, 4vw, 60px);
+      align-items: center;
+    }
+    .va-hero__copy { max-width: 600px; }
+    .va-hero__copy h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      font-size: clamp(2.4rem, 5.5vw, 4rem);
+      line-height: 0.96;
+      letter-spacing: -0.042em;
+      margin-bottom: 22px;
+      color: var(--ink);
+    }
+    .va-hero__copy h1 em {
+      font-style: normal; display: block; color: var(--ink-4);
+      font-weight: 500; font-size: 0.44em; letter-spacing: 0.02em; margin-bottom: 10px;
+    }
+    .va-hero__copy h1 .hl { color: var(--brand); }
+    .va-hero__lead {
+      font-size: clamp(1rem, 1.5vw, 1.14rem);
+      color: var(--ink-2); max-width: 50ch; margin-bottom: 28px;
+    }
+    .va-hero__actions { display: flex; flex-wrap: wrap; gap: 12px; }
+    .va-hero__trust {
+      display: flex; gap: 24px; flex-wrap: wrap;
+      padding-top: 24px; border-top: 1px solid var(--line); margin-top: 32px;
+    }
+    .va-hero__trust-item .n {
+      font-family: 'Montserrat'; font-weight: 700;
+      font-size: 1.5rem; letter-spacing: -0.02em; line-height: 1; color: var(--ink);
+    }
+    .va-hero__trust-item .n span { color: var(--brand); }
+    .va-hero__trust-item .l {
+      font-size: 0.7rem; color: var(--ink-4); margin-top: 5px;
+      font-family: 'Montserrat', sans-serif; letter-spacing: 0.04em;
+    }
+
+    /* Visual badge panel */
+    .va-hero__visual {
+      display: flex; flex-direction: column; gap: 14px;
+    }
+    .va-badge {
+      border: 1px solid var(--line); border-radius: var(--radius);
+      background: #fff; padding: 22px 24px;
+      box-shadow: var(--shadow-sm);
+      display: flex; gap: 16px; align-items: flex-start;
+    }
+    .va-badge__ic {
+      width: 44px; height: 44px; border-radius: 12px; flex-shrink: 0;
+      display: grid; place-items: center;
+      background: var(--brand-tint-2); border: 1px solid rgba(62,56,242,0.14);
+      color: var(--brand);
+    }
+    .va-badge__ic svg { width: 22px; height: 22px; }
+    .va-badge h3 { font-size: 1rem; font-weight: 600; color: var(--ink); margin-bottom: 4px; }
+    .va-badge p { font-size: 0.84rem; color: var(--ink-3); line-height: 1.5; }
+    .va-badge__tag {
+      margin-top: 10px; display: inline-block;
+      font-family: 'Montserrat', sans-serif; font-size: 0.58rem; letter-spacing: 0.06em;
+      padding: 3px 9px; border-radius: 999px;
+      background: var(--bg-2); border: 1px solid var(--line); color: var(--ink-4);
+    }
+
+    /* ==========================================================================
+       SERVIÇOS CARDS — Tira de 3 cards (locação, venda, AT)
+       ========================================================================== */
+    .services-strip { background: var(--bg); border-block: 1px solid var(--line); }
+    .services-strip__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: var(--line);
+      margin-top: 0;
+    }
+    .svc-card {
+      background: #fff; padding: clamp(22px, 3vw, 34px);
+      transition: background 0.22s var(--ease);
+    }
+    .svc-card:hover { background: var(--bg-1); }
+    .svc-card__ic {
+      width: 48px; height: 48px; border-radius: 14px;
+      display: grid; place-items: center;
+      background: var(--brand-tint-2); border: 1px solid rgba(62,56,242,0.14);
+      color: var(--brand); margin-bottom: 18px;
+    }
+    .svc-card__ic svg { width: 24px; height: 24px; }
+    .svc-card h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700; font-size: 1.08rem;
+      color: var(--ink); margin-bottom: 8px;
+      letter-spacing: -0.01em;
+    }
+    .svc-card p { font-size: 0.88rem; color: var(--ink-3); line-height: 1.55; }
+    .svc-card__link {
+      margin-top: 16px; display: inline-flex; align-items: center; gap: 6px;
+      font-size: 0.88rem; font-weight: 600; color: var(--brand);
+    }
+    .svc-card__link svg { width: 16px; height: 16px; }
+
+    /* ==========================================================================
+       VENDA — portfólio e marcas
+       ========================================================================== */
+    .venda-section { background: #fff; }
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 48px;
+    }
+    .portf-card {
+      border: 1px solid var(--line); border-radius: var(--radius-sm);
+      padding: 22px; background: var(--bg);
+      box-shadow: var(--shadow-xs);
+      transition: border-color 0.25s var(--ease), transform 0.25s var(--ease), box-shadow 0.25s var(--ease);
+    }
+    .portf-card:hover { border-color: var(--line-strong); transform: translateY(-2px); box-shadow: var(--shadow-sm); }
+    .portf-card__ic {
+      width: 44px; height: 44px; border-radius: 12px;
+      display: grid; place-items: center;
+      background: var(--brand-tint-2); border: 1px solid rgba(62,56,242,0.14);
+      color: var(--brand); margin-bottom: 14px;
+    }
+    .portf-card__ic svg { width: 22px; height: 22px; }
+    .portf-card h4 { font-size: 1rem; font-weight: 600; color: var(--ink); margin-bottom: 6px; }
+    .portf-card p { font-size: 0.84rem; color: var(--ink-3); line-height: 1.5; }
+    .portf-note {
+      margin-top: 28px;
+      padding: 16px 20px;
+      border: 1px solid rgba(62,56,242,0.16);
+      border-radius: var(--radius-sm);
+      background: var(--brand-tint-2);
+      font-size: 0.88rem; color: var(--brand-ink); line-height: 1.55;
+    }
+
+    /* ==========================================================================
+       ASSISTÊNCIA ESPECIALIZADA — serviços e componentes
+       ========================================================================== */
+    .at-section { background: var(--bg-1); border-block: 1px solid var(--line); }
+    .at-nota {
+      max-width: 800px; margin: 0 auto 44px;
+      padding: 18px 22px;
+      border: 1px solid rgba(62,56,242,0.2);
+      border-radius: var(--radius-sm);
+      background: rgba(255,255,255,0.9);
+      font-size: 0.92rem; color: var(--ink-2); line-height: 1.58;
+      text-align: center;
+    }
+    .at-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+    .at-card {
+      border: 1px solid var(--line); border-radius: var(--radius-sm);
+      padding: 22px; background: #fff;
+      box-shadow: var(--shadow-xs);
+    }
+    .at-card__ic {
+      width: 44px; height: 44px; border-radius: 12px;
+      display: grid; place-items: center;
+      background: var(--brand-tint-2); border: 1px solid rgba(62,56,242,0.14);
+      color: var(--brand); margin-bottom: 14px;
+    }
+    .at-card__ic svg { width: 22px; height: 22px; }
+    .at-card h4 { font-size: 1rem; font-weight: 600; color: var(--ink); margin-bottom: 6px; }
+    .at-card p { font-size: 0.84rem; color: var(--ink-3); line-height: 1.5; }
+
+    /* ==========================================================================
+       MARCAS — Motorola / Hytera / Intelbras
+       ========================================================================== */
+    .brands-section { background: #fff; }
+    .brands-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 48px;
+    }
+    .brand-card {
+      border: 1px solid var(--line); border-radius: var(--radius);
+      padding: clamp(22px, 3vw, 32px); background: var(--bg);
+      box-shadow: var(--shadow-xs);
+    }
+    .brand-card__logo {
+      font-family: 'Montserrat', sans-serif; font-weight: 800;
+      font-size: 1.1rem; letter-spacing: -0.02em; color: var(--ink);
+      display: flex; align-items: center; gap: 6px; margin-bottom: 12px;
+    }
+    .brand-card__logo .dot {
+      width: 7px; height: 7px; border-radius: 50%; background: var(--brand);
+    }
+    .brand-card__badge {
+      display: inline-flex; align-items: center; gap: 6px; margin-bottom: 14px;
+      font-size: 0.68rem; letter-spacing: 0.05em;
+      padding: 4px 10px; border-radius: 999px;
+      background: var(--brand-tint-2); border: 1px solid rgba(62,56,242,0.18);
+      color: var(--brand-ink);
+    }
+    .brand-card h3 {
+      font-family: 'Montserrat', sans-serif; font-weight: 700;
+      font-size: 0.98rem; letter-spacing: -0.01em;
+      color: var(--ink); margin-bottom: 8px;
+    }
+    .brand-card p { font-size: 0.86rem; color: var(--ink-3); line-height: 1.55; margin-bottom: 14px; }
+    .brand-card__services { display: flex; flex-direction: column; gap: 8px; }
+    .brand-card__service {
+      display: flex; align-items: center; gap: 8px;
+      font-size: 0.84rem; color: var(--ink-2);
+    }
+    .brand-card__service svg { width: 15px; height: 15px; color: var(--ok); flex-shrink: 0; }
+
+    /* ==========================================================================
+       PROCESSO — como funciona
+       ========================================================================== */
+    .process-section { background: var(--bg); }
+    .dual-process {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: clamp(28px, 4vw, 56px);
+      margin-top: 48px; align-items: start;
+    }
+    .process-col h3 {
+      font-family: 'Montserrat'; font-weight: 700;
+      font-size: clamp(1.2rem, 2vw, 1.6rem); letter-spacing: -0.02em;
+      color: var(--ink); margin-bottom: 6px;
+    }
+    .process-col .sub { font-size: 0.88rem; color: var(--ink-3); margin-bottom: 24px; }
+    .process-steps { display: flex; flex-direction: column; gap: 0; }
+    .process-step {
+      display: flex; gap: 16px; padding: 18px 0;
+      border-bottom: 1px solid var(--line-soft);
+    }
+    .process-step:last-child { border-bottom: none; }
+    .process-step__num {
+      width: 34px; height: 34px; border-radius: 50%; flex-shrink: 0;
+      background: var(--brand-tint-2); border: 1.5px solid rgba(62,56,242,0.22);
+      display: grid; place-items: center;
+      font-family: 'Montserrat'; font-weight: 700;
+      font-size: 0.82rem; color: var(--brand);
+    }
+    .process-step h4 { font-size: 0.94rem; font-weight: 600; color: var(--ink); margin-bottom: 3px; }
+    .process-step p { font-size: 0.82rem; color: var(--ink-3); line-height: 1.5; }
+
+    /* ==========================================================================
+       CTA FINAL
+       ========================================================================== */
+    .va-cta {
+      overflow: hidden;
+      background: linear-gradient(180deg, var(--bg-1) 0%, #fff 100%);
+    }
+    .va-cta__bg {
+      position: absolute; inset: 0; z-index: 0; pointer-events: none;
+      background:
+        radial-gradient(52% 60% at 80% 28%, rgba(62,56,242,0.10), transparent 70%),
+        radial-gradient(40% 50% at 8% 90%, rgba(62,56,242,0.05), transparent 72%);
+    }
+    .va-cta__inner {
+      position: relative; z-index: 1;
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: clamp(28px, 4vw, 60px); align-items: center;
+    }
+    .va-cta__copy h2 {
+      font-family: 'Montserrat'; font-weight: 800;
+      font-size: clamp(1.9rem, 4vw, 3rem); line-height: 1.02;
+      letter-spacing: -0.035em; color: var(--ink); margin-bottom: 14px;
+    }
+    .va-cta__copy p { font-size: 0.98rem; color: var(--ink-2); max-width: 44ch; margin-bottom: 22px; }
+    .va-cta__copy .btn-row { display: flex; flex-wrap: wrap; gap: 12px; }
+
+    /* Form cotação reutilizável */
+    .cotacao-form {
+      border: 1px solid var(--line); border-radius: var(--radius);
+      background: #fff; padding: clamp(22px, 3vw, 34px);
+      box-shadow: var(--shadow-md);
+    }
+    .cotacao-form h3 {
+      font-family: 'Montserrat'; font-weight: 700;
+      font-size: 1.1rem; color: var(--ink); margin-bottom: 18px;
+      letter-spacing: -0.01em;
+    }
+    .cotacao-form .field { margin-bottom: 14px; }
+    .cotacao-form label {
+      display: block; font-size: 0.82rem; font-weight: 600;
+      color: var(--ink-2); margin-bottom: 5px;
+    }
+    .cotacao-form input,
+    .cotacao-form select,
+    .cotacao-form textarea {
+      width: 100%; padding: 10px 14px;
+      border: 1px solid var(--line-strong); border-radius: var(--radius-sm);
+      background: var(--bg); font-size: 0.9rem; color: var(--ink);
+      font-family: inherit;
+      transition: border-color 0.2s var(--ease), background 0.2s var(--ease);
+    }
+    .cotacao-form input:focus,
+    .cotacao-form select:focus,
+    .cotacao-form textarea:focus {
+      outline: none; border-color: var(--brand);
+      background: #fff;
+    }
+    .cotacao-form textarea { resize: vertical; min-height: 80px; }
+    .cotacao-form [aria-invalid="true"] { border-color: #dc2626; }
+    .cotacao-form .btn-submit {
+      width: 100%; margin-top: 6px;
+    }
+    #va-form-status { margin-top: 12px; font-size: 0.84rem; }
+
+    /* ==========================================================================
+       RESPONSIVO
+       ========================================================================== */
+    @media (max-width: 1024px) {
+      .va-hero__inner { grid-template-columns: 1fr; }
+      .va-hero__copy { max-width: 640px; }
+      .va-hero__visual { flex-direction: row; flex-wrap: wrap; }
+      .va-badge { flex: 1; min-width: 240px; }
+      .brands-grid { grid-template-columns: 1fr 1fr; }
+      .va-cta__inner { grid-template-columns: 1fr; }
+      .dual-process { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 768px) {
+      .services-strip__grid { grid-template-columns: 1fr; }
+      .portfolio-grid { grid-template-columns: 1fr 1fr; }
+      .at-grid { grid-template-columns: 1fr 1fr; }
+      .brands-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 480px) {
+      .portfolio-grid { grid-template-columns: 1fr; }
+      .at-grid { grid-template-columns: 1fr; }
+      .va-hero__visual { flex-direction: column; }
+    }
+  </style>
+</head>
+<body data-page="venda-assistencia">
+
+  <!-- HEADER reaproveitável -->
+  <div id="site-header"></div>
+
+  <main id="top">
+
+    <!-- ====================================================================
+         HERO — venda + assistência especializada
+         ==================================================================== -->
+    <section class="va-hero pad rel">
+      <div class="va-hero__bg" aria-hidden="true"></div>
+      <div class="shell va-hero__inner">
+        <div class="va-hero__copy" data-reveal>
+          <div class="breadcrumb" style="margin-bottom:16px">
+            <a href="index.html">Home</a>
+            <span aria-hidden="true">›</span>
+            <span aria-current="page">Venda + Assistência</span>
+          </div>
+          <h1>
+            <em>Venda B2B · Assistência ESPECIALIZADA</em>
+            Do rádio <span class="hl">certo</span> ao suporte que mantém a frota no ar.
+          </h1>
+          <p class="va-hero__lead">
+            Motorola Solutions, Hytera e Intelbras — a ABC orienta a compra pelo que a operação exige e mantém o equipamento funcionando com assistência técnica especializada em São Bernardo do Campo.
+          </p>
+          <div class="va-hero__actions">
+            <a href="contato.html#cotacao" class="btn btn--primary">Solicitar cotação</a>
+            <a href="assistencia.html#cotacao" class="btn btn--ghost">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" width="18" height="18" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0 5 5l-9 9a2.8 2.8 0 0 1-4-4l9-9Z"/><path d="m15 9 .5.5"/></svg>
+              Falar com a assistência
+            </a>
+          </div>
+          <div class="va-hero__trust">
+            <div class="va-hero__trust-item">
+              <div class="n">3<span>+</span></div>
+              <div class="l">MARCAS<br>ATENDIDAS</div>
+            </div>
+            <div class="va-hero__trust-item">
+              <div class="n">DMR<span>·</span>PoC</div>
+              <div class="l">TECNOLOGIAS<br>SUPORTADAS</div>
+            </div>
+            <div class="va-hero__trust-item">
+              <div class="n">SBC<span>/</span>SP</div>
+              <div class="l">ATENDIMENTO<br>PRESENCIAL</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="va-hero__visual" data-reveal>
+          <div class="va-badge">
+            <div class="va-badge__ic" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 6h2M9 10h6M10 16h4"/></svg>
+            </div>
+            <div>
+              <h3>Venda B2B consultiva</h3>
+              <p>Portáteis, móveis, repetidoras, PoC/LTE e acessórios indicados pela operação. Cotação formal, sem preço inventado no site.</p>
+              <span class="va-badge__tag">Por cotação</span>
+            </div>
+          </div>
+          <div class="va-badge">
+            <div class="va-badge__ic" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M14.7 6.3a4 4 0 0 0 5 5l-9 9a2.8 2.8 0 0 1-4-4l9-9Z"/><path d="m15 9 .5.5"/></svg>
+            </div>
+            <div>
+              <h3>Assistência ESPECIALIZADA</h3>
+              <p>Diagnóstico, reparo, troca de componentes e programação por técnicos especializados em Motorola e Hytera.</p>
+              <span class="va-badge__tag">Especializada</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         NOTA: assistência especializada vs. autorizada
+         ==================================================================== -->
+    <section class="services-strip pad">
+      <div class="shell">
+        <div class="services-strip__grid">
+          <div class="svc-card">
+            <div class="svc-card__ic" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3v18"/><path d="M5 8a9 9 0 0114 0"/><path d="M8 11a5 5 0 018 0"/><circle cx="12" cy="14" r="1.5"/></svg>
+            </div>
+            <h3>Locação — carro-chefe</h3>
+            <p>Para eventos, obras e empresas que precisam de frota completa com repetidor de sinal, suporte incluso e projetos simples ou complexos.</p>
+            <a href="locacao.html" class="svc-card__link">
+              Ver locação
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+          <div class="svc-card">
+            <div class="svc-card__ic" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 6h2M9 10h6M10 16h4"/></svg>
+            </div>
+            <h3>Venda B2B</h3>
+            <p>Motorola, Hytera e Intelbras para frota permanente: portáteis, móveis, repetidoras, PoC/LTE, bodycams e acessórios por modelo. Orientação técnica, não venda de catálogo.</p>
+            <a href="#venda" class="svc-card__link">
+              Ver portfólio
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+          <div class="svc-card">
+            <div class="svc-card__ic" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M14.7 6.3a4 4 0 0 0 5 5l-9 9a2.8 2.8 0 0 1-4-4l9-9Z"/><path d="m15 9 .5.5"/></svg>
+            </div>
+            <h3>Assistência ESPECIALIZADA</h3>
+            <p>Diagnóstico, reparo, troca de componentes, programação e manutenção preventiva. A mesma equipe que vende é quem cuida da frota depois — conhecimento real de plataforma.</p>
+            <a href="#assistencia" class="svc-card__link">
+              Ver assistência
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         VENDA — portfólio B2B
+         ==================================================================== -->
+    <section class="venda-section pad" id="venda">
+      <div class="shell">
+        <div class="section-head" data-reveal>
+          <span class="eyebrow">Venda B2B — por cotação</span>
+          <h2>Portfólio profissional completo</h2>
+          <p>Especificações técnicas de cada modelo saem sempre do datasheet oficial do fabricante. A ABC orienta a escolha conforme ambiente, alcance necessário e regulamentação — nunca por catálogo genérico.</p>
+        </div>
+
+        <div class="portfolio-grid">
+          <div class="portf-card" data-reveal>
+            <div class="portf-card__ic" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 6h2M9 10h6M10 16h4"/></svg>
+            </div>
+            <h4>Portáteis (HT)</h4>
+            <p>Analógicos e DMR digital com opções IP67/68, MIL-STD e versões ATEX. Motorola MOTOTRBO R2, R5, R7, Ion, DEP; Hytera HP606/686/706, PD406/506, BD306/506; Intelbras RC e RPD.</p>
+          </div>
+          <div class="portf-card" data-reveal>
+            <div class="portf-card__ic" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="2" y="6" width="20" height="14" rx="2"/><path d="M16 2v4M8 2v4"/></svg>
+            </div>
+            <h4>Móveis e veiculares</h4>
+            <p>Para frotas e bases fixas com maior potência: Motorola DEM300/400/500, DGM5000e; Hytera MD626, HM786 — cobertura em deslocamento e pontos fixos.</p>
+          </div>
+          <div class="portf-card" data-reveal>
+            <div class="portf-card__ic" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4.9 19.1a10 10 0 0 1 0-14.2M7.8 16.2a6 6 0 0 1 0-8.4M19.1 4.9a10 10 0 0 1 0 14.2M16.2 7.8a6 6 0 0 1 0 8.4"/><circle cx="12" cy="12" r="1.5"/></svg>
+            </div>
+            <h4>Repetidoras e sistemas</h4>
+            <p>Infraestrutura para ampliar alcance: Motorola SLR5100/8000, DGR6175; Hytera RD986/s, HR1066; sistemas DMR IP Site Connect, Capacity Plus, Tier III e Wave PTX.</p>
+          </div>
+          <div class="portf-card" data-reveal>
+            <div class="portf-card__ic" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z"/></svg>
+            </div>
+            <h4>PoC / LTE</h4>
+            <p>Rádio sobre rede celular — cobertura nacional sem licença de frequência dedicada. Motorola Wave PTX TLK 100/150; Hytera PNC380/550/560, MNC360; Inrico PoC.</p>
+          </div>
+          <div class="portf-card" data-reveal>
+            <div class="portf-card__ic" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg>
+            </div>
+            <h4>Câmeras corporais (bodycam)</h4>
+            <p>Para registro e ronda em segurança pública e privada: Hytera VM580D, VM690 Pro, VM750D, VM780 e câmera veicular RC-I827R.</p>
+          </div>
+          <div class="portf-card" data-reveal>
+            <div class="portf-card__ic" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="m21 8-9-5-9 5 9 5 9-5Z"/><path d="m3 8 9 5v8M21 8l-9 5"/></svg>
+            </div>
+            <h4>Acessórios por modelo</h4>
+            <p>Baterias, fones, microfones de lapela, carregadores múltiplos, capas e antenas — o acessório certo por modelo, confirmado na cotação.</p>
+          </div>
+        </div>
+
+        <p class="portf-note">
+          Disponibilidade de modelos, configurações e preços é confirmada na cotação — nunca publicada no site. A orientação parte do cenário real de uso.
+        </p>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         ASSISTÊNCIA ESPECIALIZADA — serviços reais
+         ==================================================================== -->
+    <section class="at-section pad" id="assistencia">
+      <div class="shell">
+        <div class="section-head" data-reveal>
+          <span class="eyebrow">Assistência ESPECIALIZADA — nunca "autorizada"</span>
+          <h2>Diagnóstico, reparo e troca de componentes</h2>
+          <p>Técnicos especializados em radiocomunicação profissional Motorola e Hytera — da avaliação ao reparo completo, com conhecimento real de plataforma.</p>
+        </div>
+
+        <p class="at-nota">
+          A ABC oferece <strong>assistência técnica especializada</strong> — equipe própria treinada nas plataformas Motorola e Hytera. Prazos e condições de atendimento são confirmados pela equipe técnica conforme cada caso.
+        </p>
+
+        <div class="at-grid">
+          <div class="at-card" data-reveal>
+            <div class="at-card__ic" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M9 11l3 3L22 4"/><path d="M20.6 12a9 9 0 1 1-2.3-5.7"/></svg>
+            </div>
+            <h4>Diagnóstico técnico completo</h4>
+            <p>Avaliação detalhada do rádio: circuitos internos, bateria, antena, botão PTT e módulo de RF. A causa da falha é identificada antes de qualquer intervenção.</p>
+          </div>
+          <div class="at-card" data-reveal>
+            <div class="at-card__ic" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M14.7 6.3a4 4 0 0 0 5 5l-9 9a2.8 2.8 0 0 1-4-4l9-9Z"/><path d="m15 9 .5.5"/></svg>
+            </div>
+            <h4>Troca de componentes</h4>
+            <p>Substituição de antenas, conectores coaxiais, teclados, baterias, alto-falantes, microfones internos, carcaças e display — Motorola e Hytera.</p>
+          </div>
+          <div class="at-card" data-reveal>
+            <div class="at-card__ic" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M9 10a3 3 0 1 1 6 0c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+            </div>
+            <h4>Reparo e recuperação</h4>
+            <p>Conserto de rádios com falhas de áudio, transmissão, display, quedas mecânicas e exposição à umidade — inclusive equipamentos que parecem sem solução.</p>
+          </div>
+          <div class="at-card" data-reveal>
+            <div class="at-card__ic" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3v18"/><path d="M5 8a9 9 0 0114 0"/><path d="M8 11a5 5 0 018 0"/><circle cx="12" cy="14" r="1.5"/></svg>
+            </div>
+            <h4>Programação DMR e analógica</h4>
+            <p>Programação de frequências, canais, CTCSS/DCS, privacidade digital e perfis DMR para rádios analógicos e digitais — inclusive programação de repetidoras e software de gestão.</p>
+          </div>
+          <div class="at-card" data-reveal>
+            <div class="at-card__ic" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <h4>Manutenção preventiva</h4>
+            <p>Revisão periódica da frota: limpeza de contatos, calibração, teste de bateria e atualização de firmware quando disponível — evita falhas não planejadas.</p>
+          </div>
+          <div class="at-card" data-reveal>
+            <div class="at-card__ic" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4.9 19.1a10 10 0 0 1 0-14.2M7.8 16.2a6 6 0 0 1 0-8.4M19.1 4.9a10 10 0 0 1 0 14.2M16.2 7.8a6 6 0 0 1 0 8.4"/><circle cx="12" cy="12" r="1.5"/></svg>
+            </div>
+            <h4>Testes de RF e alinhamento</h4>
+            <p>Verificação de potência de transmissão, sensibilidade de recepção e alinhamento de frequência — garante operação dentro dos parâmetros técnicos do fabricante.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         MARCAS — Motorola / Hytera / Intelbras
+         ==================================================================== -->
+    <section class="brands-section pad">
+      <div class="shell">
+        <div class="section-head" data-reveal>
+          <span class="eyebrow">Marcas atendidas</span>
+          <h2>Especialistas nas principais plataformas</h2>
+          <p>Venda e assistência especializada para Motorola, Hytera e Intelbras — as marcas que estão nas operações profissionais no Brasil.</p>
+        </div>
+
+        <div class="brands-grid">
+          <article class="brand-card" data-reveal>
+            <div class="brand-card__logo">
+              Motorola<div class="dot"></div>
+            </div>
+            <div class="brand-card__badge" style="font-family:'Montserrat',sans-serif;text-transform:uppercase;font-weight:600">
+              <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 12l2 2 4-4"/><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/></svg>
+              Venda + Assistência
+            </div>
+            <h3>MOTOTRBO™ — rádio digital profissional DMR</h3>
+            <p>Linhas R2, R5, R7, Ion, DEP, DGP, DTR, DEM, DGM. Repetidoras SLR5100/8000 e sistemas Wave PTX para comunicação DMR e PoC.</p>
+            <div class="brand-card__services">
+              <div class="brand-card__service">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12l4 4L19 6"/></svg>
+                Diagnóstico de falha elétrica e de firmware
+              </div>
+              <div class="brand-card__service">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12l4 4L19 6"/></svg>
+                Troca de antena, botão PTT e carcaça
+              </div>
+              <div class="brand-card__service">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12l4 4L19 6"/></svg>
+                Reparo de conector, microfone e display
+              </div>
+              <div class="brand-card__service">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12l4 4L19 6"/></svg>
+                Programação MOTOTRBO após reparo
+              </div>
+            </div>
+          </article>
+
+          <article class="brand-card" data-reveal>
+            <div class="brand-card__logo">
+              Hytera<div class="dot"></div>
+            </div>
+            <div class="brand-card__badge" style="font-family:'Montserrat',sans-serif;text-transform:uppercase;font-weight:600">
+              <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 12l2 2 4-4"/><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/></svg>
+              Venda + Assistência
+            </div>
+            <h3>Portáteis e móveis DMR — ATEX incluso</h3>
+            <p>HP606/686/706/786, PD406/506, BD306/506, BP516/566, MD626, HM786. Versões ATEX (PD716Ex, PD796Ex) para ambientes classificados. Repetidoras RD986 e HR1066.</p>
+            <div class="brand-card__services">
+              <div class="brand-card__service">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12l4 4L19 6"/></svg>
+                Avaliação e diagnóstico técnico completo
+              </div>
+              <div class="brand-card__service">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12l4 4L19 6"/></svg>
+                Troca de componentes e peças originais/compatíveis
+              </div>
+              <div class="brand-card__service">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12l4 4L19 6"/></svg>
+                Reparo de display, teclado e alto-falante
+              </div>
+              <div class="brand-card__service">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12l4 4L19 6"/></svg>
+                Programação e ajuste de perfis DMR
+              </div>
+            </div>
+          </article>
+
+          <article class="brand-card" data-reveal>
+            <div class="brand-card__logo">
+              Intelbras<div class="dot"></div>
+            </div>
+            <div class="brand-card__badge" style="font-family:'Montserrat',sans-serif;text-transform:uppercase;font-weight:600">
+              <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 12l2 2 4-4"/><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/></svg>
+              Venda
+            </div>
+            <h3>Rádios comunicadores Intelbras</h3>
+            <p>RC3002 G2, RC6 Mini, RPD8 e repetidoras REP25 para operações que precisam de custo-benefício com qualidade.</p>
+            <div class="brand-card__services">
+              <div class="brand-card__service">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12l4 4L19 6"/></svg>
+                Linha profissional com garantia de fábrica
+              </div>
+              <div class="brand-card__service">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12l4 4L19 6"/></svg>
+                Orientação de modelo por operação
+              </div>
+              <div class="brand-card__service">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12l4 4L19 6"/></svg>
+                Compatibilidade verificada com frota existente
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         PROCESSO — como funciona venda e assistência
+         ==================================================================== -->
+    <section class="process-section pad">
+      <div class="shell">
+        <div class="section-head" data-reveal>
+          <span class="eyebrow">Como funciona</span>
+          <h2>Processo claro para venda e assistência</h2>
+        </div>
+
+        <div class="dual-process">
+          <div class="process-col" data-reveal>
+            <h3>Compra de rádios B2B</h3>
+            <p class="sub">Venda consultiva por cotação formal — sem preço ou especificação genérica no site.</p>
+            <div class="process-steps">
+              <div class="process-step">
+                <div class="process-step__num">1</div>
+                <div>
+                  <h4>Descreva a operação</h4>
+                  <p>Quantidade de usuários, ambiente de uso, necessidade de repetidora, acessórios e frota atual — quanto mais contexto, melhor a recomendação.</p>
+                </div>
+              </div>
+              <div class="process-step">
+                <div class="process-step__num">2</div>
+                <div>
+                  <h4>Avaliação técnica</h4>
+                  <p>Nossa equipe recomenda os modelos adequados com base no datasheet oficial do fabricante — sem inventar especificações.</p>
+                </div>
+              </div>
+              <div class="process-step">
+                <div class="process-step__num">3</div>
+                <div>
+                  <h4>Cotação formal</h4>
+                  <p>Proposta com modelos, quantidades e condições — confirmada pela equipe comercial.</p>
+                </div>
+              </div>
+              <div class="process-step">
+                <div class="process-step__num">4</div>
+                <div>
+                  <h4>Entrega e programação</h4>
+                  <p>Equipamento entregue configurado e pronto para operar, com suporte da assistência especializada incluído.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="process-col" data-reveal>
+            <h3>Assistência especializada</h3>
+            <p class="sub">Diagnóstico primeiro — conserto depois. Transparência em cada etapa.</p>
+            <div class="process-steps">
+              <div class="process-step">
+                <div class="process-step__num">1</div>
+                <div>
+                  <h4>Abertura do chamado</h4>
+                  <p>Descreva o problema do rádio: modelo, sintoma e histórico de uso. Nosso técnico retorna rapidamente.</p>
+                </div>
+              </div>
+              <div class="process-step">
+                <div class="process-step__num">2</div>
+                <div>
+                  <h4>Diagnóstico técnico</h4>
+                  <p>Avaliação completa do equipamento: circuitos, bateria, RF, antena e PTT. A causa é identificada antes de qualquer intervenção.</p>
+                </div>
+              </div>
+              <div class="process-step">
+                <div class="process-step__num">3</div>
+                <div>
+                  <h4>Orçamento aprovado</h4>
+                  <p>Orçamento detalhado enviado para aprovação antes de qualquer reparo ou troca de componente.</p>
+                </div>
+              </div>
+              <div class="process-step">
+                <div class="process-step__num">4</div>
+                <div>
+                  <h4>Reparo e devolução</h4>
+                  <p>Rádio consertado, testado nos limites do fabricante e pronto para voltar à operação.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         CTA + FORM
+         ==================================================================== -->
+    <section class="va-cta pad rel" id="cotacao">
+      <div class="va-cta__bg" aria-hidden="true"></div>
+      <div class="shell va-cta__inner">
+        <div class="va-cta__copy" data-reveal>
+          <span class="eyebrow">Fale com a ABC</span>
+          <h2>Comunicação profissional não pode parar.</h2>
+          <p>Do rádio certo para a operação à manutenção que mantém a frota no ar — a ABC cobre todo o ciclo em São Bernardo do Campo.</p>
+          <div class="btn-row">
+            <a href="locacao.html" class="btn btn--primary">Ver locação</a>
+            <a href="assistencia.html" class="btn btn--ghost">Assistência especializada</a>
+          </div>
+        </div>
+
+        <div class="cotacao-form" data-reveal>
+          <h3>Cotação ou chamado de assistência</h3>
+          <form id="va-form" novalidate>
+            <div class="field">
+              <label for="va-nome">Nome *</label>
+              <input type="text" id="va-nome" name="nome" placeholder="Seu nome" required autocomplete="name" />
+            </div>
+            <div class="field">
+              <label for="va-empresa">Empresa</label>
+              <input type="text" id="va-empresa" name="empresa" placeholder="Nome da empresa" autocomplete="organization" />
+            </div>
+            <div class="field">
+              <label for="va-tipo">Tipo de solicitação *</label>
+              <select id="va-tipo" name="tipo" required>
+                <option value="">Selecione…</option>
+                <option value="cotacao-venda">Cotação de compra de rádios</option>
+                <option value="assistencia">Assistência técnica especializada</option>
+                <option value="programacao">Programação de rádios</option>
+                <option value="sistemas">Instalação de sistemas / repetidoras</option>
+                <option value="outro">Outro</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="va-msg">Descreva a necessidade *</label>
+              <textarea id="va-msg" name="msg" placeholder="Ex.: 4 rádios Motorola R7 para segurança de evento, ou: rádio Hytera HP686 sem áudio…" required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--lg btn-submit">
+              Enviar e abrir WhatsApp
+              <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 18.15c-1.52 0-3.01-.41-4.31-1.18l-.31-.18-3.2.84.85-3.12-.2-.32a8.21 8.21 0 01-1.26-4.38c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.82 2.41a8.18 8.18 0 012.41 5.82c0 4.54-3.7 8.24-8.24 8.24z"/></svg>
+            </button>
+          </form>
+          <p id="va-form-status" role="status" aria-live="polite"></p>
+          <p style="font-size:0.76rem;color:var(--ink-4);margin-top:10px">
+            Seus dados vão apenas para o WhatsApp comercial da ABC. Nenhuma informação é armazenada neste site.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER reaproveitável -->
+  <div id="site-footer"></div>
+
+  <!-- WhatsApp flutuante -->
+  <a class="wa-float" href="https://wa.me/551139961976?text=Ol%C3%A1%2C%20ABC!%20Preciso%20de%20cota%C3%A7%C3%A3o%20ou%20assist%C3%AAncia%20especializada." target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 18.15c-1.52 0-3.01-.41-4.31-1.18l-.31-.18-3.2.84.85-3.12-.2-.32a8.21 8.21 0 01-1.26-4.38c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.82 2.41a8.18 8.18 0 012.41 5.82c0 4.54-3.7 8.24-8.24 8.24z"/></svg>
+  </a>
+
+  <script src="shared/app.min.js?v=20260618"></script>
+  <script>
+  /* Formulário de cotação/assistência — integração WhatsApp em modo sandbox */
+  (function () {
+    var form = document.getElementById('va-form');
+    var status = document.getElementById('va-form-status');
+    if (!form) return;
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var ok = true;
+      form.querySelectorAll('[required]').forEach(function (el) {
+        var bad = !el.value.trim();
+        el.setAttribute('aria-invalid', bad ? 'true' : 'false');
+        if (bad) ok = false;
+      });
+      if (!ok) {
+        status.textContent = 'Preencha os campos obrigatórios destacados.';
+        status.style.color = '#dc2626';
+        return;
+      }
+      var nome = (form.querySelector('#va-nome').value || '').trim();
+      var empresa = (form.querySelector('#va-empresa').value || '').trim();
+      var tipo = (form.querySelector('#va-tipo').value || '').trim();
+      var msg = (form.querySelector('#va-msg').value || '').trim();
+      var tipoLabel = { 'cotacao-venda': 'Cotação de compra', 'assistencia': 'Assistência técnica', 'programacao': 'Programação', 'sistemas': 'Instalação de sistemas', 'outro': 'Outro' }[tipo] || tipo;
+      var text = encodeURIComponent(
+        'Olá, ABC! Sou ' + nome + (empresa ? ' da empresa ' + empresa : '') + '.\n' +
+        'Tipo: ' + tipoLabel + '\n' +
+        'Necessidade: ' + msg
+      );
+      /* Sandbox: valida mas não abre WhatsApp real (modo preview interno) */
+      if (typeof window.ABC_SANDBOX !== 'undefined' && window.ABC_SANDBOX !== false) {
+        form.innerHTML = '<p class="form-success" role="status" style="color:var(--ok);font-weight:600">✓ Dados validados (modo sandbox). Em produção, o WhatsApp seria aberto automaticamente.</p>';
+        return;
+      }
+      window.open('https://wa.me/551139961976?text=' + text, '_blank', 'noopener');
+      window.location.href = 'obrigado.html';
+    });
+  })();
+  </script>
+
+</body>
+</html>

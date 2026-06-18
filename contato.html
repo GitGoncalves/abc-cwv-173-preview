@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#FFFFFF" />
+  <meta name="color-scheme" content="light" />
+
+  <!-- SEO: title <=60, description <=155, 1 H1 -->
+  <title>Cotação de Rádios e Contato | ABC Mais Telecom</title>
+  <meta name="description" content="Fale com a ABC Mais Telecom: cotação de rádios Motorola e Hytera, locação com suporte incluso e assistência especializada. WhatsApp, e-mail ou formulário." />
+  <link rel="canonical" href="https://abcmaistelecom.com.br/contato/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Contato | ABC Mais Telecom" />
+  <meta property="og:description" content="Fale conosco para cotação de rádios, locação ou assistência especializada. WhatsApp, e-mail e formulário qualificado." />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:url" content="https://abcmaistelecom.com.br/contato.html" />
+  <meta property="og:image" content="https://abcmaistelecom.com.br/shared/assets/brand/abcmais-brand.svg" />
+  <meta property="og:image:alt" content="ABC Mais Telecom: Entre em contato" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Contato | ABC Mais Telecom" />
+  <meta name="twitter:description" content="Fale conosco para cotação de rádios, locação ou assistência especializada. WhatsApp, e-mail e formulário qualificado." />
+  <meta name="twitter:image" content="https://abcmaistelecom.com.br/shared/assets/brand/abcmais-brand.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&display=optional" data-async-style />
+  <script src="shared/fonts.min.js" defer></script>
+  <script src="shared/lgpd-consent.min.js" defer></script>
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&display=optional" /></noscript>
+  <link rel="stylesheet" href="shared/style.min.css?v=20260618" />
+
+  <!-- Estilos específicos da página Contato -->
+  <style>
+    /* =========================================================================
+       CONTATO — estilos específicos (extensão do design system aprovado)
+       ========================================================================= */
+
+    /* LCP: hero acima da dobra não deve iniciar oculto */
+    .page-hero [data-reveal] { opacity: 1; transform: none; }
+
+    /* --- Breadcrumb hero da página --- */
+    .page-hero {
+      padding: clamp(56px, 8vw, 96px) 0 clamp(40px, 6vw, 72px);
+      background: linear-gradient(180deg, #FFFFFF 0%, var(--bg-1) 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    .page-hero__bg {
+      position: absolute; inset: 0; z-index: 0; pointer-events: none;
+      background:
+        radial-gradient(44% 60% at 94% 8%, rgba(62,56,242,0.08), transparent 72%),
+        radial-gradient(30% 40% at 4% 92%, rgba(62,56,242,0.05), transparent 72%);
+    }
+    .page-hero__grid {
+      position: absolute; inset: 0; z-index: 0; pointer-events: none; opacity: 0.5;
+      background-image:
+        linear-gradient(var(--line-soft) 1px, transparent 1px),
+        linear-gradient(90deg, var(--line-soft) 1px, transparent 1px);
+      background-size: 64px 64px;
+      mask-image: radial-gradient(120% 80% at 50% 0%, #000 28%, transparent 72%);
+      -webkit-mask-image: radial-gradient(120% 80% at 50% 0%, #000 28%, transparent 72%);
+    }
+    .page-hero__inner {
+      position: relative; z-index: 1;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(28px, 4vw, 64px);
+      align-items: end;
+    }
+    .page-hero__copy {}
+    .page-hero__breadcrumb {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--ink-4); margin-bottom: 22px;
+    }
+    .page-hero__breadcrumb a { color: var(--ink-4); transition: color 0.2s; }
+    .page-hero__breadcrumb a:hover { color: var(--brand-ink); }
+    .page-hero__breadcrumb .sep { color: var(--ink-4); opacity: 0.5; }
+    .page-hero h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      font-size: clamp(2.8rem, 6vw, 4.6rem);
+      line-height: 0.94;
+      letter-spacing: -0.045em;
+      color: var(--ink);
+      margin-bottom: 20px;
+    }
+    .page-hero h1 em {
+      font-style: normal;
+      display: block;
+      color: var(--ink-4);
+      font-weight: 500;
+      font-size: 0.42em;
+      letter-spacing: 0.02em;
+      margin-bottom: 10px;
+    }
+    .page-hero h1 .hl { color: var(--brand); }
+    .page-hero__lead {
+      font-size: clamp(1rem, 1.4vw, 1.1rem);
+      color: var(--ink-3); max-width: 46ch;
+      margin-bottom: 28px;
+    }
+    .page-hero__actions {
+      display: flex; flex-wrap: wrap; gap: 12px;
+    }
+
+    /* --- Cards de canais diretos (hero right) --- */
+    .contact-channels {
+      display: flex; flex-direction: column; gap: 12px;
+    }
+    .channel-card {
+      background: #FFFFFF;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-sm);
+      padding: 18px 22px;
+      display: flex; align-items: center; gap: 16px;
+      box-shadow: var(--shadow-sm);
+      transition: border-color 0.25s var(--ease), transform 0.25s var(--ease), box-shadow 0.25s var(--ease);
+      text-decoration: none; color: inherit;
+    }
+    .channel-card:hover { border-color: var(--brand); transform: translateY(-2px); box-shadow: var(--shadow-md); }
+    .channel-card--wa:hover { border-color: #1f9d52; }
+    .channel-card__ic {
+      width: 48px; height: 48px; border-radius: 14px;
+      display: grid; place-items: center; flex-shrink: 0;
+    }
+    .channel-card--wa .channel-card__ic { background: rgba(31,157,82,0.10); color: #1f9d52; border: 1px solid rgba(31,157,82,0.22); }
+    .channel-card--email .channel-card__ic { background: var(--brand-tint-2); color: var(--brand); border: 1px solid rgba(62,56,242,0.18); }
+    .channel-card--phone .channel-card__ic { background: var(--brand-tint); color: var(--brand); border: 1px solid rgba(62,56,242,0.14); }
+    .channel-card__ic svg { width: 22px; height: 22px; }
+    .channel-card__body { flex: 1; }
+    .channel-card__body b { display: block; font-size: 0.98rem; font-weight: 600; color: var(--ink); margin-bottom: 2px; }
+    .channel-card__body small { font-size: 0.8rem; color: var(--ink-4); }
+    .channel-card__arrow { color: var(--ink-4); transition: color 0.2s, transform 0.25s var(--ease); }
+    .channel-card:hover .channel-card__arrow { color: var(--brand-ink); transform: translateX(3px); }
+    .channel-card__arrow svg { width: 17px; height: 17px; }
+
+    /* Selo de resposta rápida */
+    .response-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.7rem; letter-spacing: 0.08em;
+      padding: 8px 14px; border-radius: 999px;
+      background: rgba(21,147,94,0.08);
+      border: 1px solid rgba(21,147,94,0.28);
+      color: var(--ok);
+      margin-top: 8px;
+    }
+    .response-badge .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--ok-soft); animation: blink 2s ease-in-out infinite; }
+    @keyframes blink { 0%,100% { opacity: 1; } 50% { opacity: 0.35; } }
+
+    /* =========================================================================
+       SEÇÃO PRINCIPAL: form qualificado + info
+       ========================================================================= */
+    .contact-main { background: var(--bg-1); border-top: 1px solid var(--line); }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: clamp(30px, 5vw, 72px);
+      align-items: start;
+    }
+
+    /* --- Formulário qualificado --- */
+    .contact-form-wrap {}
+    .contact-form-title {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      letter-spacing: -0.025em;
+      color: var(--ink);
+      margin-bottom: 8px;
+    }
+    .contact-form-sub { font-size: 0.92rem; color: var(--ink-3); margin-bottom: 28px; max-width: 44ch; }
+
+    /* Form override: segmento como grid de botões */
+    .seg-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      margin-bottom: 0;
+    }
+    .seg-btn {
+      border: 1px solid var(--line-strong);
+      border-radius: 12px;
+      background: #FFFFFF;
+      padding: 13px 10px;
+      text-align: center;
+      cursor: pointer;
+      display: flex; flex-direction: column; align-items: center; gap: 8px;
+      transition: border-color 0.22s var(--ease), background 0.22s var(--ease), box-shadow 0.22s var(--ease);
+      font-family: inherit; color: var(--ink-3);
+      box-shadow: var(--shadow-xs);
+    }
+    .seg-btn svg { width: 20px; height: 20px; color: var(--ink-4); transition: color 0.22s; }
+    .seg-btn .sb-label { font-size: 0.78rem; font-weight: 500; color: var(--ink-3); transition: color 0.22s; }
+    .seg-btn:hover { border-color: rgba(62,56,242,0.35); background: var(--brand-tint); }
+    .seg-btn:hover svg, .seg-btn:hover .sb-label { color: var(--brand-ink); }
+    .seg-btn.active {
+      border-color: var(--brand);
+      background: var(--brand-tint-2);
+      box-shadow: 0 0 0 1.5px rgba(62,56,242,0.2);
+    }
+    .seg-btn.active svg, .seg-btn.active .sb-label { color: var(--brand-ink); }
+    .seg-btn.active svg { color: var(--brand); }
+
+    /* campo hidden de segmento */
+    #segmento { display: none; }
+
+    /* Qtd + modalidade row */
+    .qty-modal-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+
+    /* Disclaimer e botão */
+    .form-submit-row { display: flex; flex-direction: column; gap: 10px; margin-top: 4px; }
+
+    /* Mensagem de sucesso override */
+    .form-success-contact {
+      display: none; text-align: center; padding: 40px 16px;
+    }
+    .form-success-contact.show { display: block; animation: fadeUp 0.5s var(--ease); }
+    .form-success-contact .ic {
+      width: 64px; height: 64px; border-radius: 50%;
+      background: rgba(21,147,94,0.10); border: 1px solid rgba(21,147,94,0.32);
+      display: grid; place-items: center; margin: 0 auto 20px;
+      color: var(--ok);
+    }
+    .form-success-contact .ic svg { width: 30px; height: 30px; }
+    .form-success-contact h3 {
+      font-family: 'Montserrat'; font-weight: 700;
+      font-size: 1.5rem; letter-spacing: -0.02em;
+      margin-bottom: 8px; color: var(--ink);
+    }
+    .form-success-contact p { color: var(--ink-3); font-size: 0.92rem; margin-bottom: 20px; }
+
+    /* --- Info lateral --- */
+    .contact-info { position: sticky; top: 100px; }
+    .info-block {
+      background: #FFFFFF;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 14px;
+    }
+    .info-block h4 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 1.05rem;
+      letter-spacing: -0.015em;
+      color: var(--ink);
+      margin-bottom: 14px;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .info-block h4 .ic {
+      width: 34px; height: 34px; border-radius: 10px;
+      display: grid; place-items: center;
+      background: var(--brand-tint-2);
+      border: 1px solid rgba(62,56,242,0.16);
+      color: var(--brand);
+      flex-shrink: 0;
+    }
+    .info-block h4 .ic svg { width: 17px; height: 17px; }
+
+    .address-lines { display: flex; flex-direction: column; gap: 8px; }
+    .address-line { display: flex; gap: 11px; font-size: 0.9rem; color: var(--ink-3); }
+    .address-line svg { width: 16px; height: 16px; color: var(--brand); flex-shrink: 0; margin-top: 2px; }
+
+    /* Mapa embed */
+    .map-wrap {
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+      border: 1px solid var(--line);
+      margin-top: 14px;
+      background: var(--bg-2);
+      aspect-ratio: 16/9;
+      position: relative;
+    }
+    .map-wrap iframe {
+      width: 100%; height: 100%;
+      border: none; display: block;
+    }
+    /* Fallback caso o iframe seja bloqueado */
+    .map-fallback {
+      position: absolute; inset: 0;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      gap: 12px; color: var(--ink-3); font-size: 0.88rem;
+      background: var(--bg-2);
+    }
+    .map-fallback svg { width: 32px; height: 32px; color: var(--brand); opacity: 0.7; }
+
+    /* Horário e diferenciais */
+    .hours-grid { display: flex; flex-direction: column; gap: 9px; }
+    .hours-row {
+      display: flex; justify-content: space-between; align-items: center;
+      font-size: 0.88rem; padding-bottom: 9px; border-bottom: 1px solid var(--line-soft);
+    }
+    .hours-row:last-child { border-bottom: none; padding-bottom: 0; }
+    .hours-row .day { color: var(--ink-2); font-weight: 500; }
+    .hours-row .time { font-family: 'Montserrat', sans-serif; font-size: 0.8rem; color: var(--ink-3); }
+
+    /* Diferenciais */
+    .diff-list { display: flex; flex-direction: column; gap: 10px; }
+    .diff-item { display: flex; gap: 11px; align-items: flex-start; font-size: 0.9rem; color: var(--ink-3); }
+    .diff-item svg { width: 17px; height: 17px; color: var(--brand); flex-shrink: 0; margin-top: 2px; }
+    .diff-item strong { display: block; font-size: 0.9rem; font-weight: 600; color: var(--ink-2); }
+
+    /* =========================================================================
+       FAQ DE CONTATO
+       ========================================================================= */
+    .contact-faq { background: #FFFFFF; border-top: 1px solid var(--line); }
+    .faq-contact-grid {
+      display: grid;
+      grid-template-columns: 0.75fr 1.25fr;
+      gap: clamp(30px, 5vw, 72px);
+      align-items: start;
+    }
+    .faq-contact-intro { position: sticky; top: 100px; }
+    .faq-contact-intro h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: clamp(1.7rem, 3.5vw, 2.5rem);
+      letter-spacing: -0.03em;
+      line-height: 1.0;
+      margin-bottom: 14px;
+      color: var(--ink);
+    }
+    .faq-contact-intro p { color: var(--ink-3); font-size: 0.96rem; max-width: 38ch; }
+    .faq-contact-intro .cta-box {
+      margin-top: 26px; padding: 20px; background: var(--bg-1);
+      border: 1px solid var(--line); border-radius: var(--radius-sm);
+    }
+    .faq-contact-intro .cta-box p { font-size: 0.86rem; margin-top: 6px; max-width: 100%; }
+    .faq-contact-intro .cta-box a { color: var(--brand-ink); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; text-decoration-color: rgba(62,56,242,0.3); }
+    .faq-contact-intro .cta-box a:hover { text-decoration-color: var(--brand); }
+
+    /* =========================================================================
+       CTA FINAL
+       ========================================================================= */
+    .contact-cta { background: linear-gradient(135deg, var(--brand-deep) 0%, var(--brand) 55%, var(--brand-soft) 100%); position: relative; overflow: hidden; }
+    .contact-cta::before {
+      content: ""; position: absolute; inset: 0;
+      background:
+        radial-gradient(50% 60% at 90% 20%, rgba(255,255,255,0.10), transparent 60%),
+        radial-gradient(35% 45% at 8% 85%, rgba(0,0,30,0.20), transparent 65%);
+      pointer-events: none;
+    }
+    .contact-cta__inner {
+      position: relative; z-index: 1;
+      text-align: center;
+      padding-block: clamp(56px, 9vw, 100px);
+    }
+    .contact-cta h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      font-size: clamp(2rem, 4.5vw, 3.4rem);
+      line-height: 1.0;
+      letter-spacing: -0.04em;
+      color: #FFFFFF;
+      margin-bottom: 16px;
+    }
+    .contact-cta h2 em { font-style: normal; color: rgba(255,255,255,0.65); font-size: 0.45em; display: block; font-weight: 500; letter-spacing: 0.02em; margin-bottom: 10px; }
+    .contact-cta p { font-size: 1.05rem; color: rgba(255,255,255,0.78); margin-bottom: 36px; max-width: 48ch; margin-inline: auto; }
+    .contact-cta__actions { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; }
+    .btn--light {
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.38);
+      color: #fff;
+      backdrop-filter: blur(8px);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.22);
+    }
+    .btn--light:hover { background: rgba(255,255,255,0.22); border-color: rgba(255,255,255,0.55); }
+    .btn--white { background: #FFFFFF; color: var(--brand-deep); box-shadow: 0 12px 28px -12px rgba(0,0,0,0.25); }
+    .btn--white:hover { transform: translateY(-1px); box-shadow: 0 18px 36px -14px rgba(0,0,0,0.3); }
+    .btn--wa-lg { background: #1f9d52; color: #fff; box-shadow: 0 12px 28px -12px rgba(31,157,82,0.55); }
+    .btn--wa-lg:hover { background: #1c8e4a; transform: translateY(-1px); }
+
+    /* =========================================================================
+       RESPONSIVO
+       ========================================================================= */
+    @media (max-width: 1024px) {
+      .page-hero__inner { grid-template-columns: 1fr; gap: 36px; }
+      .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+      .contact-info { position: static; }
+      .faq-contact-grid { grid-template-columns: 1fr; gap: 32px; }
+      .faq-contact-intro { position: static; }
+    }
+    @media (max-width: 760px) {
+      .seg-grid { grid-template-columns: repeat(2, 1fr); }
+      .qty-modal-row { grid-template-columns: 1fr; }
+      .contact-channels { gap: 10px; }
+    }
+    @media (max-width: 480px) {
+      .seg-grid { grid-template-columns: repeat(3, 1fr); }
+      .seg-btn .sb-label { font-size: 0.68rem; }
+      .page-hero__actions { flex-direction: column; }
+      .page-hero__actions .btn { justify-content: center; }
+    }
+  </style>
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%233E38F2'/%3E%3Cpath d='M8 22a14 14 0 0114-14' fill='none' stroke='white' stroke-width='2.4' stroke-linecap='round'/%3E%3Cpath d='M12 22a10 10 0 0110-10' fill='none' stroke='white' stroke-width='2.4' stroke-linecap='round'/%3E%3Cpath d='M16 22a6 6 0 016-6' fill='none' stroke='white' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E" />
+</head>
+<body data-page="contato">
+
+  <!-- HEADER reaproveitável -->
+  <div id="site-header"></div>
+
+  <main id="top">
+
+    <!-- ============ HERO DA PÁGINA ============ -->
+    <section class="page-hero">
+      <div class="page-hero__bg"></div>
+      <div class="page-hero__grid"></div>
+      <div class="shell page-hero__inner">
+
+        <div class="page-hero__copy" data-reveal>
+          <div class="page-hero__breadcrumb">
+            <a href="index.html">Home</a>
+            <span class="sep">›</span>
+            <span>Contato</span>
+          </div>
+
+          <h1>
+            <em>Fale com a ABC</em>
+            Vamos montar a solução<br><span class="hl">certa</span> para você.
+          </h1>
+          <p class="page-hero__lead">
+            Conte o seu cenário (galpão, evento, segurança, obra) e a gente indica o equipamento ideal.
+            Respondemos com cotação real: venda ou locação, sem enrolação.
+          </p>
+          <div class="page-hero__actions">
+            <a href="#cotacao" class="btn btn--primary btn--lg">
+              Pedir cotação
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a href="https://wa.me/551139961976?text=Ol%C3%A1%2C%20ABC!%20Quero%20uma%20cota%C3%A7%C3%A3o." target="_blank" rel="noopener" class="btn btn--wa btn--lg">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 18.15c-1.52 0-3.01-.41-4.31-1.18l-.31-.18-3.2.84.85-3.12-.2-.32a8.21 8.21 0 01-1.26-4.38c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.82 2.41a8.18 8.18 0 012.41 5.82c0 4.54-3.7 8.24-8.24 8.24z"/></svg>
+              WhatsApp direto
+            </a>
+          </div>
+        </div>
+
+        <!-- 3 Canais de WhatsApp + e-mail -->
+        <div class="contact-channels" data-reveal>
+
+          <!-- WA Comercial (geral / assistência) -->
+          <a href="https://wa.me/551139961976?text=Ol%C3%A1%2C%20ABC!%20Quero%20uma%20cota%C3%A7%C3%A3o." target="_blank" rel="noopener" class="channel-card channel-card--wa">
+            <div class="channel-card__ic">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 18.15c-1.52 0-3.01-.41-4.31-1.18l-.31-.18-3.2.84.85-3.12-.2-.32a8.21 8.21 0 01-1.26-4.38c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.82 2.41a8.18 8.18 0 012.41 5.82c0 4.54-3.7 8.24-8.24 8.24z"/></svg>
+            </div>
+            <div class="channel-card__body">
+              <b>Comercial</b>
+              <small>Informações gerais e assistência</small>
+            </div>
+            <div class="channel-card__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+          </a>
+
+          <!-- WA Vendas -->
+          <a href="https://wa.me/551139961976?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20ABC!%20Quero%20cota%C3%A7%C3%A3o%20de%20compra." target="_blank" rel="noopener" class="channel-card channel-card--wa">
+            <div class="channel-card__ic">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 18.15c-1.52 0-3.01-.41-4.31-1.18l-.31-.18-3.2.84.85-3.12-.2-.32a8.21 8.21 0 01-1.26-4.38c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.82 2.41a8.18 8.18 0 012.41 5.82c0 4.54-3.7 8.24-8.24 8.24z"/></svg>
+            </div>
+            <div class="channel-card__body">
+              <b>Vendas</b>
+              <small>Compra de rádios e equipamentos</small>
+            </div>
+            <div class="channel-card__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+          </a>
+
+          <!-- WA Locação -->
+          <a href="https://wa.me/551139961976?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20ABC!%20Quero%20cota%C3%A7%C3%A3o%20de%20loca%C3%A7%C3%A3o." target="_blank" rel="noopener" class="channel-card channel-card--wa">
+            <div class="channel-card__ic">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 18.15c-1.52 0-3.01-.41-4.31-1.18l-.31-.18-3.2.84.85-3.12-.2-.32a8.21 8.21 0 01-1.26-4.38c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.82 2.41a8.18 8.18 0 012.41 5.82c0 4.54-3.7 8.24-8.24 8.24z"/></svg>
+            </div>
+            <div class="channel-card__body">
+              <b>Locação</b>
+              <small>Eventos, obras e contratos</small>
+            </div>
+            <div class="channel-card__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+          </a>
+
+          <!-- E-mail -->
+          <a href="mailto:comercial@abcmais.com.br?subject=Cota%C3%A7%C3%A3o%20de%20r%C3%A1dios" class="channel-card channel-card--email">
+            <div class="channel-card__ic">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+            </div>
+            <div class="channel-card__body">
+              <b>E-mail</b>
+              <small>comercial@abcmais.com.br</small>
+            </div>
+            <div class="channel-card__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+          </a>
+
+          <div class="response-badge">
+            <span class="dot"></span>
+            Atendimento em horário comercial · formulário roteia para o time certo
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ FORM + INFO ============ -->
+    <section class="contact-main pad" id="cotacao">
+      <div class="shell">
+        <div class="contact-grid">
+
+          <!-- COLUNA ESQUERDA: formulário qualificado -->
+          <div class="contact-form-wrap">
+
+            <div data-reveal>
+              <span class="eyebrow">Cotação sem compromisso</span>
+              <h2 class="contact-form-title">Qual é a sua operação?</h2>
+              <p class="contact-form-sub">Preencha o que faz sentido. Quanto mais detalhes, mais precisa a cotação. Respondemos com a melhor opção.</p>
+            </div>
+
+            <div class="quote-form" data-reveal>
+              <form id="contactForm" data-lead-capture data-ctx="pela página de contato" novalidate>
+
+                <!-- SEGMENTO: grid visual de seleção -->
+                <div class="field" style="margin-bottom:24px">
+                  <label style="margin-bottom:10px">
+                    Segmento da sua operação
+                    <span style="font-size:0.75rem;color:var(--ink-4);font-weight:400;margin-left:6px">(opcional)</span>
+                  </label>
+                  <input type="hidden" id="segmento" name="segmento" />
+                  <div class="seg-grid" role="group" aria-label="Segmento da operação">
+
+                    <button type="button" class="seg-btn" data-seg="Eventos" aria-pressed="false">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 19V9l8-5 8 5v10"/><path d="M9 19v-6h6v6"/></svg>
+                      <span class="sb-label">Eventos</span>
+                    </button>
+
+                    <button type="button" class="seg-btn" data-seg="Obras e Indústria" aria-pressed="false">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 21h18M6 21V8l6-4 6 4v13"/><path d="M10 12h4M10 16h4"/></svg>
+                      <span class="sb-label">Obras</span>
+                    </button>
+
+                    <button type="button" class="seg-btn" data-seg="Segurança" aria-pressed="false">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/></svg>
+                      <span class="sb-label">Segurança</span>
+                    </button>
+
+                    <button type="button" class="seg-btn" data-seg="Logística" aria-pressed="false">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="1" y="3" width="15" height="13"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                      <span class="sb-label">Logística</span>
+                    </button>
+
+                    <button type="button" class="seg-btn" data-seg="Saúde e Hotelaria" aria-pressed="false">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 13a2 2 0 012-2h14a2 2 0 012 2v6H3z"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+                      <span class="sb-label">Saúde / Hotel</span>
+                    </button>
+
+                    <button type="button" class="seg-btn" data-seg="Outro" aria-pressed="false">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3M12 17h.01"/></svg>
+                      <span class="sb-label">Outro</span>
+                    </button>
+
+                  </div>
+                </div>
+
+                <!-- MODALIDADE (obrigatório) -->
+                <div class="field" style="margin-bottom:16px">
+                  <label for="modalidade-c">Como posso ajudar? <span class="req">*</span></label>
+                  <select id="modalidade-c" name="modalidade" required>
+                    <option value="">Selecione…</option>
+                    <option value="Quero comprar rádios">Quero comprar rádios</option>
+                    <option value="Quero locar rádios (locação)">Quero locar rádios (locação)</option>
+                    <option value="Assistência técnica / manutenção">Assistência técnica / manutenção</option>
+                    <option value="Ainda estou avaliando">Ainda estou avaliando</option>
+                  </select>
+                  <span class="err">Selecione uma opção.</span>
+                </div>
+
+                <!-- IDENTIFICAÇÃO -->
+                <div class="field-row">
+                  <div class="field">
+                    <label for="nome-c">Nome <span class="req">*</span></label>
+                    <input type="text" id="nome-c" name="nome" placeholder="Seu nome" required autocomplete="name" minlength="3" />
+                    <span class="err">Informe seu nome (mín. 3 caracteres).</span>
+                  </div>
+                  <div class="field">
+                    <label for="empresa-c">Empresa <span style="font-size:0.75rem;color:var(--ink-4);font-weight:400">(opcional)</span></label>
+                    <input type="text" id="empresa-c" name="empresa" placeholder="Nome da empresa" autocomplete="organization" />
+                  </div>
+                </div>
+
+                <div class="field-row">
+                  <div class="field">
+                    <label for="whatsapp-c">WhatsApp <span class="req">*</span></label>
+                    <input type="tel" id="whatsapp-c" name="whatsapp" placeholder="(11) 9 9999-9999" required autocomplete="tel" inputmode="tel" />
+                    <span class="err">Informe um WhatsApp válido com DDD.</span>
+                  </div>
+                  <div class="field">
+                    <label for="qtd-c">Quantidade de rádios <span style="font-size:0.75rem;color:var(--ink-4);font-weight:400">(opcional)</span></label>
+                    <select id="qtd-c" name="quantidade">
+                      <option value="">Selecione…</option>
+                      <option value="Até 5 rádios">Até 5 rádios</option>
+                      <option value="6 a 20 rádios">6 a 20 rádios</option>
+                      <option value="21 a 50 rádios">21 a 50 rádios</option>
+                      <option value="Mais de 50">Mais de 50</option>
+                      <option value="Ainda não sei">Ainda não sei</option>
+                    </select>
+                  </div>
+                </div>
+
+                <!-- MENSAGEM LIVRE -->
+                <div class="field">
+                  <label for="msg-c">Mensagem <span style="font-size:0.75rem;color:var(--ink-4);font-weight:400">(opcional)</span></label>
+                  <textarea id="msg-c" name="mensagem" placeholder="Onde vai usar, período, produto de interesse, dúvidas…" rows="4"></textarea>
+                </div>
+
+                <!-- LGPD (obrigatório — botão Enviar desabilitado até marcar) -->
+                <div class="field" style="margin-top:4px">
+                  <label class="lgpd-label" style="display:flex;align-items:flex-start;gap:10px;cursor:pointer;font-size:0.86rem;color:var(--ink-3);line-height:1.55">
+                    <input type="checkbox" name="lgpd" id="lgpd-c" style="margin-top:3px;flex-shrink:0;width:16px;height:16px;accent-color:var(--brand)" />
+                    <span>
+                      Concordo com o tratamento dos dados informados conforme a
+                      <a href="politica-privacidade.html" target="_blank" rel="noopener" style="color:var(--brand-ink);font-weight:600">Política de Privacidade</a>
+                      da ABC Mais Telecom, para fins de atendimento e envio de propostas comerciais.
+                    </span>
+                  </label>
+                </div>
+
+                <!-- Mensagem sandbox (visível temporariamente em sandbox mode) -->
+                <div class="sandbox-notice" style="display:none;margin-top:10px;padding:10px 14px;background:rgba(180,114,12,0.08);border-left:3px solid var(--amber);border-radius:4px;font-size:0.82rem;color:var(--amber);font-weight:500"></div>
+
+                <!-- Mensagem de erro de envio (live mode) -->
+                <div class="form-send-error" style="display:none;margin-top:10px;padding:10px 14px;background:rgba(210,59,59,0.08);border-left:3px solid var(--danger);border-radius:4px;font-size:0.82rem;color:var(--danger)"></div>
+
+                <div class="form-submit-row">
+                  <button type="submit" id="submit-captura" class="btn btn--primary btn--lg" style="justify-content:center" disabled aria-disabled="true">
+                    <span class="btn-spinner" style="display:none" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18" style="animation:spin 0.8s linear infinite"><circle cx="12" cy="12" r="10" stroke-opacity="0.25"/><path d="M12 2a10 10 0 0110 10"/></svg>
+                    </span>
+                    <span class="btn-label">
+                      Enviar mensagem
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </span>
+                  </button>
+                  <p class="form-disclaimer">
+                    Nenhum dado é compartilhado com terceiros. Usamos apenas para atendimento personalizado pela equipe ABC Mais Telecom.
+                  </p>
+                </div>
+
+              </form>
+
+              <!-- Nota: em modo sandbox, form mostra aviso e redireciona para /obrigado.html -->
+              <!-- Em live, POST para webhook n8n → redirect para /obrigado.html -->
+            </div>
+          </div>
+
+          <!-- COLUNA DIREITA: endereço + mapa + horários + diferenciais -->
+          <div class="contact-info">
+
+            <!-- Endereço e mapa -->
+            <div class="info-block" data-reveal>
+              <h4>
+                <span class="ic">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </span>
+                Onde estamos
+              </h4>
+              <div class="address-lines">
+                <div class="address-line">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  <span>São Bernardo do Campo, SP</span>
+                </div>
+                <div class="address-line">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg>
+                  <span>(11) 3996-1976</span>
+                </div>
+                <div class="address-line">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+                  <span>comercial@abcmais.com.br</span>
+                </div>
+              </div>
+
+              <!-- Mapa Google Maps — lazy via IntersectionObserver (sem carregar scripts no LCP) -->
+              <div class="map-wrap" id="map-container" role="region" aria-label="Mapa de localização: São Bernardo do Campo, SP">
+                <div class="map-fallback" id="map-placeholder" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  <span>São Bernardo do Campo, SP</span>
+                </div>
+                <noscript>
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58822.94826046491!2d-46.57427773954779!3d-23.694292455698694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce42bde42c1b1d%3A0x5bef8f22e2ec6a21!2zU8OjbyBCZXJuYXJkbyBkbyBDYW1wbyAtIFNQ!5e0!3m2!1spt-BR!2sbr!4v1717890000000!5m2!1spt-BR!2sbr"
+                    allowfullscreen referrerpolicy="no-referrer-when-downgrade"
+                    title="Mapa: São Bernardo do Campo, SP" width="100%" height="100%" style="border:none"
+                  ></iframe>
+                </noscript>
+              </div>
+              <script>
+              (function(){
+                var c=document.getElementById('map-container');
+                if(!c||!('IntersectionObserver' in window))return;
+                var obs=new IntersectionObserver(function(entries){
+                  if(!entries[0].isIntersecting)return;
+                  obs.disconnect();
+                  var p=document.getElementById('map-placeholder');
+                  if(p)p.style.display='none';
+                  var f=document.createElement('iframe');
+                  f.src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58822.94826046491!2d-46.57427773954779!3d-23.694292455698694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce42bde42c1b1d%3A0x5bef8f22e2ec6a21!2zU8OjbyBCZXJuYXJkbyBkbyBDYW1wbyAtIFNQ!5e0!3m2!1spt-BR!2sbr!4v1717890000000!5m2!1spt-BR!2sbr';
+                  f.allowFullscreen=true;
+                  f.referrerPolicy='no-referrer-when-downgrade';
+                  f.title='Mapa: São Bernardo do Campo, SP';
+                  f.style.cssText='width:100%;height:100%;border:none;display:block';
+                  c.appendChild(f);
+                },{rootMargin:'200px'});
+                obs.observe(c);
+              })();
+              </script>
+
+              <a
+                href="https://maps.google.com/?q=S%C3%A3o+Bernardo+do+Campo+SP"
+                target="_blank"
+                rel="noopener"
+                class="btn btn--ghost"
+                style="margin-top:14px;width:100%;justify-content:center;font-size:0.88rem"
+                aria-label="Abrir no Google Maps: São Bernardo do Campo"
+              >
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Abrir no Google Maps
+              </a>
+            </div>
+
+            <!-- Horário -->
+            <div class="info-block" data-reveal>
+              <h4>
+                <span class="ic">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                </span>
+                Horário de atendimento
+              </h4>
+              <div class="hours-grid">
+                <div class="hours-row">
+                  <span class="day">Segunda a Sexta</span>
+                  <span class="time">08:00 às 18:00</span>
+                </div>
+                <div class="hours-row">
+                  <span class="day">Sábado</span>
+                  <span class="time">09:00 às 13:00</span>
+                </div>
+                <div class="hours-row">
+                  <span class="day">Domingo e Feriado</span>
+                  <span class="time">Fechado</span>
+                </div>
+              </div>
+              <p style="font-size:0.8rem;color:var(--ink-4);margin-top:14px;line-height:1.5">
+                WhatsApp tem resposta preferencial em horário comercial.
+                Para urgências de locação ativa, entre em contato pelo mesmo número.
+              </p>
+            </div>
+
+            <!-- Diferenciais de atendimento -->
+            <div class="info-block" data-reveal>
+              <h4>
+                <span class="ic">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 12l2 2 4-4"/><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/></svg>
+                </span>
+                Por que falar com a ABC
+              </h4>
+              <div class="diff-list">
+                <div class="diff-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 12l2 2 4-4"/><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/></svg>
+                  <div><strong>Suporte técnico de verdade</strong>Programação de canais, ajuda na configuração e testes no seu local antes de fechar.</div>
+                </div>
+                <div class="diff-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 7h18v11a2 2 0 01-2 2H5a2 2 0 01-2-2V7z"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>
+                  <div><strong>Locação com suporte incluso</strong>: entrega, configuração e acompanhamento técnico durante todo o período.</div>
+                </div>
+                <div class="diff-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 7l-5 5 2 2 5-5"/><path d="M3 21l3-1 12-12-2-2L4 18l-1 3z"/></svg>
+                  <div><strong>Assistência especializada</strong>Reparo em Motorola, Hytera e Intelbras: não é bancada genérica.</div>
+                </div>
+                <div class="diff-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+                  <div><strong>Parceiro, não só fornecedor</strong>Se for só preço, somos honestos: o nosso valor está no serviço. Sem sumir depois da venda.</div>
+                </div>
+              </div>
+            </div>
+
+          </div><!-- /contact-info -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ DE CONTATO ============ -->
+    <section class="contact-faq pad" id="faq">
+      <div class="shell">
+        <div class="faq-contact-grid">
+
+          <div class="faq-contact-intro" data-reveal>
+            <span class="eyebrow">Dúvidas frequentes</span>
+            <h2>Antes de ligar,<br>confira aqui.</h2>
+            <p>Reunimos as 5 perguntas que chegam toda semana. Se a sua não está aqui, é só mandar.</p>
+            <div class="cta-box">
+              <h4 style="font-size:0.96rem;font-weight:600;color:var(--ink)">Prefere falar diretamente?</h4>
+              <p style="margin-bottom:8px">Escolha o canal certo:</p>
+              <p style="margin-bottom:4px">
+                <a href="https://wa.me/551139961976?text=Ol%C3%A1%2C%20vim%20pelo%20site%21%20Quero%20cota%C3%A7%C3%A3o%20de%20compra%20de%20r%C3%A1dios." target="_blank" rel="noopener"><strong>Vendas</strong> — compra de rádios</a>
+              </p>
+              <p style="margin-bottom:4px">
+                <a href="https://wa.me/551139961976?text=Ol%C3%A1%2C%20vim%20pelo%20site%21%20Quero%20cota%C3%A7%C3%A3o%20de%20loca%C3%A7%C3%A3o." target="_blank" rel="noopener"><strong>Locação</strong> — eventos e contratos</a>
+              </p>
+              <p>
+                <a href="https://wa.me/551139961976?text=Ol%C3%A1%2C%20tenho%20uma%20d%C3%BAvida%20sobre%20r%C3%A1dios." target="_blank" rel="noopener"><strong>Comercial</strong> — dúvidas e assistência</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-list" data-reveal>
+
+            <div class="faq-item">
+              <button class="faq-q" aria-expanded="false">
+                <span class="ix">01</span>
+                <span class="faq-q__txt">O alcance do rádio é mesmo o que diz no datasheet?</span>
+                <span class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span>
+              </button>
+              <div class="faq-a">
+                <div class="faq-a__inner">
+                  O alcance informado pelo fabricante é medido em <strong>área aberta, sem barreiras</strong>: campo ou zona rural. Em ambiente urbano (prédios, galpões, subsolos), o sinal sofre interferências e o alcance real é menor. Por isso a gente oferece <strong>teste físico no seu local</strong> antes de fechar: você sabe o que vai funcionar, sem surpresa depois.
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q" aria-expanded="false">
+                <span class="ix">02</span>
+                <span class="faq-q__txt">Funciona em subsolo ou cobertura de prédio alto?</span>
+                <span class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span>
+              </button>
+              <div class="faq-a">
+                <div class="faq-a__inner">
+                  Sim, há modelos e configurações para esses ambientes, inclusive com repetidoras para ampliar a cobertura dentro de estruturas fechadas. O ideal é <strong>agendar um teste no local</strong>: avaliamos as condições reais de propagação e recomendamos o equipamento adequado.
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q" aria-expanded="false">
+                <span class="ix">03</span>
+                <span class="faq-q__txt">Por que não usar celular em vez de rádio?</span>
+                <span class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span>
+              </button>
+              <div class="faq-a">
+                <div class="faq-a__inner">
+                  Depende da operação. Quando a resposta precisa ser imediata, celular depende de sinal, de operadora, de plano, e o funcionário pode dizer que "não viu a mensagem". <strong>Rádio HT: aperta o botão e a mensagem chega na hora.</strong> Sem operadora, sem intermediário. O funcionário <em>para tudo para atender</em>, e tudo fica no escopo da empresa. Operação séria precisa disso.
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q" aria-expanded="false">
+                <span class="ix">04</span>
+                <span class="faq-q__txt">Por que comprar da ABC e não do Mercado Livre?</span>
+                <span class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span>
+              </button>
+              <div class="faq-a">
+                <div class="faq-a__inner">
+                  No marketplace você não sabe de quem está comprando, a pessoa pode sumir amanhã. Com a ABC você tem: <strong>suporte técnico, atendimento consultivo, programação dos canais, testes no local, garantia com parceiro físico, troca de componentes</strong> (antena, botões). Se você quer um parceiro que vai estar lá na hora que der problema, somos a escolha certa. Se for só preço, somos honestos: eu não consigo competir.
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q" aria-expanded="false">
+                <span class="ix">05</span>
+                <span class="faq-q__txt">O rádio chega programado e pronto para usar?</span>
+                <span class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span>
+              </button>
+              <div class="faq-a">
+                <div class="faq-a__inner">
+                  Sim. Na locação, a programação dos canais já vai feita para a sua operação. O rádio chega na sua mão configurado e testado, pronto para usar. Suporte técnico acompanha durante todo o período — no fim do aluguel, a gente recolhe o equipamento.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA FINAL ============ -->
+    <section class="contact-cta">
+      <div class="shell contact-cta__inner">
+        <div data-reveal>
+          <h2>
+            <em>Pronto para começar?</em>
+            Manda a sua operação<br>que a gente indica o caminho.
+          </h2>
+          <p>Venda ou locação: a gente monta a solução certa para o seu tamanho de operação. Sem kit padrão engessado.</p>
+          <div class="contact-cta__actions">
+            <a href="https://wa.me/551139961976?text=Ol%C3%A1%2C%20ABC!%20Quero%20cota%C3%A7%C3%A3o%20de%20r%C3%A1dios." target="_blank" rel="noopener" class="btn btn--wa-lg btn--lg">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 18.15c-1.52 0-3.01-.41-4.31-1.18l-.31-.18-3.2.84.85-3.12-.2-.32a8.21 8.21 0 01-1.26-4.38c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.82 2.41a8.18 8.18 0 012.41 5.82c0 4.54-3.7 8.24-8.24 8.24z"/></svg>
+              Falar no WhatsApp Comercial
+            </a>
+            <a href="https://wa.me/551139961976?text=Ol%C3%A1%2C%20vim%20pelo%20site!%20Quero%20loca%C3%A7%C3%A3o%20de%20r%C3%A1dios." target="_blank" rel="noopener" class="btn btn--wa-lg btn--lg">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 18.15c-1.52 0-3.01-.41-4.31-1.18l-.31-.18-3.2.84.85-3.12-.2-.32a8.21 8.21 0 01-1.26-4.38c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.82 2.41a8.18 8.18 0 012.41 5.82c0 4.54-3.7 8.24-8.24 8.24z"/></svg>
+              Falar no WhatsApp Locação
+            </a>
+            <a href="#cotacao" class="btn btn--light btn--lg">
+              Usar o formulário
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <div id="site-footer"></div>
+
+  <!-- WhatsApp flutuante -->
+  <a href="https://wa.me/551139961976?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20ABC." target="_blank" rel="noopener" class="wa-float" aria-label="Falar no WhatsApp da ABC Mais Telecom">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 18.15c-1.52 0-3.01-.41-4.31-1.18l-.31-.18-3.2.84.85-3.12-.2-.32a8.21 8.21 0 01-1.26-4.38c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.82 2.41a8.18 8.18 0 012.41 5.82c0 4.54-3.7 8.24-8.24 8.24zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43-.14-.01-.31-.01-.48-.01s-.43.06-.66.31c-.23.25-.86.85-.86 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28z"/></svg>
+  </a>
+
+  <!-- ============ SCHEMA.ORG: Organization + LocalBusiness ============ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "https://abcmaistelecom.com.br/#business",
+    "name": "ABC Mais Telecom",
+    "url": "https://abcmaistelecom.com.br/",
+    "description": "Radiocomunicação B2B em São Bernardo do Campo: venda e locação de rádios profissionais Motorola, Hytera e Intelbras, câmera corporal e repetidoras. Suporte e assistência especializada.",
+    "telephone": "+551139961976",
+    "email": "comercial@abcmais.com.br",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "São Bernardo do Campo",
+      "addressRegion": "SP",
+      "addressCountry": "BR"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "08:00",
+        "closes": "18:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Saturday"],
+        "opens": "09:00",
+        "closes": "13:00"
+      }
+    ],
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "telephone": "+551139961976",
+        "contactType": "sales",
+        "availableLanguage": "Portuguese",
+        "contactOption": "TollFree"
+      },
+      {
+        "@type": "ContactPoint",
+        "telephone": "+551139961976",
+        "contactType": "customer support",
+        "availableLanguage": "Portuguese"
+      }
+    ],
+    "areaServed": {
+      "@type": "State",
+      "name": "São Paulo",
+      "addressCountry": "BR"
+    },
+    "knowsAbout": [
+      "Radiocomunicação profissional",
+      "Rádio HT digital DMR",
+      "Locação de rádios com suporte técnico",
+      "Câmera corporal body cam",
+      "Repetidoras de sinal",
+      "Programação de rádios",
+      "Assistência especializada Motorola Hytera Intelbras"
+    ],
+    "brand": [
+      { "@type": "Brand", "name": "Motorola Solutions" },
+      { "@type": "Brand", "name": "Hytera" },
+      { "@type": "Brand", "name": "Intelbras" }
+    ],
+    "makesOffer": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Venda de rádios profissionais Motorola e Hytera" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Locação de rádios com suporte incluso" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Assistência técnica especializada em radiocomunicação" } }
+    ],
+    "sameAs": [
+      "https://abcmaistelecom.com.br/"
+    ]
+  }
+  </script>
+
+  <!-- Segmento: botões visuais (mantido do form original) -->
+  <script>
+    (function () {
+      var segBtns = document.querySelectorAll('.seg-btn');
+      var segInput = document.getElementById('segmento');
+      segBtns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var isActive = btn.classList.contains('active');
+          segBtns.forEach(function (b) { b.classList.remove('active'); b.setAttribute('aria-pressed', 'false'); });
+          if (!isActive) {
+            btn.classList.add('active');
+            btn.setAttribute('aria-pressed', 'true');
+            if (segInput) segInput.value = btn.getAttribute('data-seg') || '';
+          } else {
+            if (segInput) segInput.value = '';
+          }
+        });
+      });
+    })();
+  </script>
+
+  <!-- Spinner animation -->
+  <style>@keyframes spin { to { transform: rotate(360deg); } }</style>
+
+  <!-- Formulário de captura: LGPD + webhook + sandbox (ABC-231) -->
+  <script src="shared/pages/form-captura.js"></script>
+
+  <script src="shared/app.min.js?v=20260618"></script>
+</body>
+</html>
