@@ -31,7 +31,8 @@
   <script src="shared/fonts.min.js" defer></script>
   <script src="shared/lgpd-consent.min.js" defer></script>
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&display=optional" /></noscript>
-  <link rel="stylesheet" href="shared/style.min.css?v=20260618" />
+  <link rel="preload" as="style" href="shared/style.min.css?v=20260618" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="shared/style.min.css?v=20260618"></noscript>
 
   <!-- Estilos específicos da página Contato -->
   <style>
@@ -801,13 +802,13 @@
               <h4 style="font-size:0.96rem;font-weight:600;color:var(--ink)">Prefere falar diretamente?</h4>
               <p style="margin-bottom:8px">Escolha o canal certo:</p>
               <p style="margin-bottom:4px">
-                <a href="https://wa.me/551139961976?text=Ol%C3%A1%2C%20vim%20pelo%20site%21%20Quero%20cota%C3%A7%C3%A3o%20de%20compra%20de%20r%C3%A1dios." target="_blank" rel="noopener"><strong>Vendas</strong> — compra de rádios</a>
+                <a href="https://wa.me/551139961976?text=Ol%C3%A1%2C%20vim%20pelo%20site%21%20Quero%20cota%C3%A7%C3%A3o%20de%20compra%20de%20r%C3%A1dios." target="_blank" rel="noopener"><strong>Vendas</strong>: compra de rádios</a>
               </p>
               <p style="margin-bottom:4px">
-                <a href="https://wa.me/551139961976?text=Ol%C3%A1%2C%20vim%20pelo%20site%21%20Quero%20cota%C3%A7%C3%A3o%20de%20loca%C3%A7%C3%A3o." target="_blank" rel="noopener"><strong>Locação</strong> — eventos e contratos</a>
+                <a href="https://wa.me/551139961976?text=Ol%C3%A1%2C%20vim%20pelo%20site%21%20Quero%20cota%C3%A7%C3%A3o%20de%20loca%C3%A7%C3%A3o." target="_blank" rel="noopener"><strong>Locação</strong>: eventos e contratos</a>
               </p>
               <p>
-                <a href="https://wa.me/551139961976?text=Ol%C3%A1%2C%20tenho%20uma%20d%C3%BAvida%20sobre%20r%C3%A1dios." target="_blank" rel="noopener"><strong>Comercial</strong> — dúvidas e assistência</a>
+                <a href="https://wa.me/551139961976?text=Ol%C3%A1%2C%20tenho%20uma%20d%C3%BAvida%20sobre%20r%C3%A1dios." target="_blank" rel="noopener"><strong>Comercial</strong>: dúvidas e assistência</a>
               </p>
             </div>
           </div>
@@ -874,7 +875,7 @@
               </button>
               <div class="faq-a">
                 <div class="faq-a__inner">
-                  Sim. Na locação, a programação dos canais já vai feita para a sua operação. O rádio chega na sua mão configurado e testado, pronto para usar. Suporte técnico acompanha durante todo o período — no fim do aluguel, a gente recolhe o equipamento.
+                  Sim. Na locação, a programação dos canais já vai feita para a sua operação. O rádio chega na sua mão configurado e testado, pronto para usar. Suporte técnico acompanha durante todo o período; no fim do aluguel, a gente recolhe o equipamento.
                 </div>
               </div>
             </div>

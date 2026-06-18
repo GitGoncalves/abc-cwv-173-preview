@@ -55,7 +55,8 @@
   <script src="shared/fonts.min.js" defer></script>
   <script src="shared/lgpd-consent.min.js" defer></script>
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&display=optional" /></noscript>
-  <link rel="stylesheet" href="shared/style.min.css?v=20260618" />
+  <link rel="preload" as="style" href="shared/style.min.css?v=20260618" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="shared/style.min.css?v=20260618"></noscript>
 
   <!-- Estilos específicos: venda-assistencia.html -->
   <style>
@@ -435,7 +436,7 @@
             Do rádio <span class="hl">certo</span> ao suporte que mantém a frota no ar.
           </h1>
           <p class="va-hero__lead">
-            Motorola Solutions, Hytera e Intelbras — a ABC orienta a compra pelo que a operação exige e mantém o equipamento funcionando com assistência técnica especializada em São Bernardo do Campo.
+            Motorola Solutions, Hytera e Intelbras: a ABC orienta a compra pelo que a operação exige e mantém o equipamento funcionando com assistência técnica especializada em São Bernardo do Campo.
           </p>
           <div class="va-hero__actions">
             <a href="contato.html#cotacao" class="btn btn--primary">Solicitar cotação</a>
@@ -495,7 +496,7 @@
             <div class="svc-card__ic" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3v18"/><path d="M5 8a9 9 0 0114 0"/><path d="M8 11a5 5 0 018 0"/><circle cx="12" cy="14" r="1.5"/></svg>
             </div>
-            <h3>Locação — carro-chefe</h3>
+            <h3>Locação: carro-chefe</h3>
             <p>Para eventos, obras e empresas que precisam de frota completa com repetidor de sinal, suporte incluso e projetos simples ou complexos.</p>
             <a href="locacao.html" class="svc-card__link">
               Ver locação
@@ -518,7 +519,7 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M14.7 6.3a4 4 0 0 0 5 5l-9 9a2.8 2.8 0 0 1-4-4l9-9Z"/><path d="m15 9 .5.5"/></svg>
             </div>
             <h3>Assistência ESPECIALIZADA</h3>
-            <p>Diagnóstico, reparo, troca de componentes, programação e manutenção preventiva. A mesma equipe que vende é quem cuida da frota depois — conhecimento real de plataforma.</p>
+            <p>Diagnóstico, reparo, troca de componentes, programação e manutenção preventiva. A mesma equipe que vende é quem cuida da frota depois, com conhecimento real de plataforma.</p>
             <a href="#assistencia" class="svc-card__link">
               Ver assistência
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
@@ -534,9 +535,9 @@
     <section class="venda-section pad" id="venda">
       <div class="shell">
         <div class="section-head" data-reveal>
-          <span class="eyebrow">Venda B2B — por cotação</span>
+          <span class="eyebrow">Venda B2B por cotação</span>
           <h2>Portfólio profissional completo</h2>
-          <p>Especificações técnicas de cada modelo saem sempre do datasheet oficial do fabricante. A ABC orienta a escolha conforme ambiente, alcance necessário e regulamentação — nunca por catálogo genérico.</p>
+          <p>Especificações técnicas de cada modelo saem sempre do datasheet oficial do fabricante. A ABC orienta a escolha conforme ambiente, alcance necessário e regulamentação, nunca por catálogo genérico.</p>
         </div>
 
         <div class="portfolio-grid">
@@ -552,7 +553,7 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="2" y="6" width="20" height="14" rx="2"/><path d="M16 2v4M8 2v4"/></svg>
             </div>
             <h4>Móveis e veiculares</h4>
-            <p>Para frotas e bases fixas com maior potência: Motorola DEM300/400/500, DGM5000e; Hytera MD626, HM786 — cobertura em deslocamento e pontos fixos.</p>
+            <p>Para frotas e bases fixas com maior potência: Motorola DEM300/400/500, DGM5000e; Hytera MD626, HM786. Cobertura em deslocamento e pontos fixos.</p>
           </div>
           <div class="portf-card" data-reveal>
             <div class="portf-card__ic" aria-hidden="true">
@@ -566,7 +567,7 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z"/></svg>
             </div>
             <h4>PoC / LTE</h4>
-            <p>Rádio sobre rede celular — cobertura nacional sem licença de frequência dedicada. Motorola Wave PTX TLK 100/150; Hytera PNC380/550/560, MNC360; Inrico PoC.</p>
+            <p>Rádio sobre rede celular: cobertura nacional sem licença de frequência dedicada. Motorola Wave PTX TLK 100/150; Hytera PNC380/550/560, MNC360; Inrico PoC.</p>
           </div>
           <div class="portf-card" data-reveal>
             <div class="portf-card__ic" aria-hidden="true">
@@ -580,12 +581,12 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="m21 8-9-5-9 5 9 5 9-5Z"/><path d="m3 8 9 5v8M21 8l-9 5"/></svg>
             </div>
             <h4>Acessórios por modelo</h4>
-            <p>Baterias, fones, microfones de lapela, carregadores múltiplos, capas e antenas — o acessório certo por modelo, confirmado na cotação.</p>
+            <p>Baterias, fones, microfones de lapela, carregadores múltiplos, capas e antenas: o acessório certo por modelo, confirmado na cotação.</p>
           </div>
         </div>
 
         <p class="portf-note">
-          Disponibilidade de modelos, configurações e preços é confirmada na cotação — nunca publicada no site. A orientação parte do cenário real de uso.
+          Disponibilidade de modelos, configurações e preços é confirmada na cotação, nunca publicada no site. A orientação parte do cenário real de uso.
         </p>
       </div>
     </section>
@@ -596,13 +597,13 @@
     <section class="at-section pad" id="assistencia">
       <div class="shell">
         <div class="section-head" data-reveal>
-          <span class="eyebrow">Assistência ESPECIALIZADA — nunca "autorizada"</span>
+          <span class="eyebrow">Assistência ESPECIALIZADA (nunca "autorizada")</span>
           <h2>Diagnóstico, reparo e troca de componentes</h2>
-          <p>Técnicos especializados em radiocomunicação profissional Motorola e Hytera — da avaliação ao reparo completo, com conhecimento real de plataforma.</p>
+          <p>Técnicos especializados em radiocomunicação profissional Motorola e Hytera: da avaliação ao reparo completo, com conhecimento real de plataforma.</p>
         </div>
 
         <p class="at-nota">
-          A ABC oferece <strong>assistência técnica especializada</strong> — equipe própria treinada nas plataformas Motorola e Hytera. Prazos e condições de atendimento são confirmados pela equipe técnica conforme cada caso.
+          A ABC oferece <strong>assistência técnica especializada</strong>, com equipe própria treinada nas plataformas Motorola e Hytera. Prazos e condições de atendimento são confirmados pela equipe técnica conforme cada caso.
         </p>
 
         <div class="at-grid">
@@ -618,35 +619,35 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M14.7 6.3a4 4 0 0 0 5 5l-9 9a2.8 2.8 0 0 1-4-4l9-9Z"/><path d="m15 9 .5.5"/></svg>
             </div>
             <h4>Troca de componentes</h4>
-            <p>Substituição de antenas, conectores coaxiais, teclados, baterias, alto-falantes, microfones internos, carcaças e display — Motorola e Hytera.</p>
+            <p>Substituição de antenas, conectores coaxiais, teclados, baterias, alto-falantes, microfones internos, carcaças e display: Motorola e Hytera.</p>
           </div>
           <div class="at-card" data-reveal>
             <div class="at-card__ic" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M9 10a3 3 0 1 1 6 0c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
             </div>
             <h4>Reparo e recuperação</h4>
-            <p>Conserto de rádios com falhas de áudio, transmissão, display, quedas mecânicas e exposição à umidade — inclusive equipamentos que parecem sem solução.</p>
+            <p>Conserto de rádios com falhas de áudio, transmissão, display, quedas mecânicas e exposição à umidade, inclusive equipamentos que parecem sem solução.</p>
           </div>
           <div class="at-card" data-reveal>
             <div class="at-card__ic" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3v18"/><path d="M5 8a9 9 0 0114 0"/><path d="M8 11a5 5 0 018 0"/><circle cx="12" cy="14" r="1.5"/></svg>
             </div>
             <h4>Programação DMR e analógica</h4>
-            <p>Programação de frequências, canais, CTCSS/DCS, privacidade digital e perfis DMR para rádios analógicos e digitais — inclusive programação de repetidoras e software de gestão.</p>
+            <p>Programação de frequências, canais, CTCSS/DCS, privacidade digital e perfis DMR para rádios analógicos e digitais, inclusive programação de repetidoras e software de gestão.</p>
           </div>
           <div class="at-card" data-reveal>
             <div class="at-card__ic" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 6v6l4 2"/></svg>
             </div>
             <h4>Manutenção preventiva</h4>
-            <p>Revisão periódica da frota: limpeza de contatos, calibração, teste de bateria e atualização de firmware quando disponível — evita falhas não planejadas.</p>
+            <p>Revisão periódica da frota: limpeza de contatos, calibração, teste de bateria e atualização de firmware quando disponível, evitando falhas não planejadas.</p>
           </div>
           <div class="at-card" data-reveal>
             <div class="at-card__ic" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4.9 19.1a10 10 0 0 1 0-14.2M7.8 16.2a6 6 0 0 1 0-8.4M19.1 4.9a10 10 0 0 1 0 14.2M16.2 7.8a6 6 0 0 1 0 8.4"/><circle cx="12" cy="12" r="1.5"/></svg>
             </div>
             <h4>Testes de RF e alinhamento</h4>
-            <p>Verificação de potência de transmissão, sensibilidade de recepção e alinhamento de frequência — garante operação dentro dos parâmetros técnicos do fabricante.</p>
+            <p>Verificação de potência de transmissão, sensibilidade de recepção e alinhamento de frequência, garantindo operação dentro dos parâmetros técnicos do fabricante.</p>
           </div>
         </div>
       </div>
@@ -660,7 +661,7 @@
         <div class="section-head" data-reveal>
           <span class="eyebrow">Marcas atendidas</span>
           <h2>Especialistas nas principais plataformas</h2>
-          <p>Venda e assistência especializada para Motorola, Hytera e Intelbras — as marcas que estão nas operações profissionais no Brasil.</p>
+          <p>Venda e assistência especializada para Motorola, Hytera e Intelbras: as marcas que estão nas operações profissionais no Brasil.</p>
         </div>
 
         <div class="brands-grid">
@@ -672,7 +673,7 @@
               <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 12l2 2 4-4"/><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/></svg>
               Venda + Assistência
             </div>
-            <h3>MOTOTRBO™ — rádio digital profissional DMR</h3>
+            <h3>MOTOTRBO™: rádio digital profissional DMR</h3>
             <p>Linhas R2, R5, R7, Ion, DEP, DGP, DTR, DEM, DGM. Repetidoras SLR5100/8000 e sistemas Wave PTX para comunicação DMR e PoC.</p>
             <div class="brand-card__services">
               <div class="brand-card__service">
@@ -702,7 +703,7 @@
               <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 12l2 2 4-4"/><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/></svg>
               Venda + Assistência
             </div>
-            <h3>Portáteis e móveis DMR — ATEX incluso</h3>
+            <h3>Portáteis e móveis DMR: ATEX incluso</h3>
             <p>HP606/686/706/786, PD406/506, BD306/506, BP516/566, MD626, HM786. Versões ATEX (PD716Ex, PD796Ex) para ambientes classificados. Repetidoras RD986 e HR1066.</p>
             <div class="brand-card__services">
               <div class="brand-card__service">
@@ -766,27 +767,27 @@
         <div class="dual-process">
           <div class="process-col" data-reveal>
             <h3>Compra de rádios B2B</h3>
-            <p class="sub">Venda consultiva por cotação formal — sem preço ou especificação genérica no site.</p>
+            <p class="sub">Venda consultiva por cotação formal, sem preço ou especificação genérica no site.</p>
             <div class="process-steps">
               <div class="process-step">
                 <div class="process-step__num">1</div>
                 <div>
                   <h4>Descreva a operação</h4>
-                  <p>Quantidade de usuários, ambiente de uso, necessidade de repetidora, acessórios e frota atual — quanto mais contexto, melhor a recomendação.</p>
+                  <p>Quantidade de usuários, ambiente de uso, necessidade de repetidora, acessórios e frota atual: quanto mais contexto, melhor a recomendação.</p>
                 </div>
               </div>
               <div class="process-step">
                 <div class="process-step__num">2</div>
                 <div>
                   <h4>Avaliação técnica</h4>
-                  <p>Nossa equipe recomenda os modelos adequados com base no datasheet oficial do fabricante — sem inventar especificações.</p>
+                  <p>Nossa equipe recomenda os modelos adequados com base no datasheet oficial do fabricante, sem inventar especificações.</p>
                 </div>
               </div>
               <div class="process-step">
                 <div class="process-step__num">3</div>
                 <div>
                   <h4>Cotação formal</h4>
-                  <p>Proposta com modelos, quantidades e condições — confirmada pela equipe comercial.</p>
+                  <p>Proposta com modelos, quantidades e condições, confirmada pela equipe comercial.</p>
                 </div>
               </div>
               <div class="process-step">
@@ -801,7 +802,7 @@
 
           <div class="process-col" data-reveal>
             <h3>Assistência especializada</h3>
-            <p class="sub">Diagnóstico primeiro — conserto depois. Transparência em cada etapa.</p>
+            <p class="sub">Diagnóstico primeiro, conserto depois. Transparência em cada etapa.</p>
             <div class="process-steps">
               <div class="process-step">
                 <div class="process-step__num">1</div>
@@ -846,7 +847,7 @@
         <div class="va-cta__copy" data-reveal>
           <span class="eyebrow">Fale com a ABC</span>
           <h2>Comunicação profissional não pode parar.</h2>
-          <p>Do rádio certo para a operação à manutenção que mantém a frota no ar — a ABC cobre todo o ciclo em São Bernardo do Campo.</p>
+          <p>Do rádio certo para a operação à manutenção que mantém a frota no ar: a ABC cobre todo o ciclo em São Bernardo do Campo.</p>
           <div class="btn-row">
             <a href="locacao.html" class="btn btn--primary">Ver locação</a>
             <a href="assistencia.html" class="btn btn--ghost">Assistência especializada</a>
